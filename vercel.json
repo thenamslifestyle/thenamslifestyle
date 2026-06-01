@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/protein-first-protocol", "dest": "/protein-first-protocol.html" },
+    { "src": "/protein-first-grocery-list", "dest": "/protein-first-grocery-list.html" },
+    { "src": "/protein-first-reset", "dest": "/protein-first-reset.html" },
+    { "src": "/protein-first-blueprint", "dest": "/protein-first-blueprint.html" },
+    { "src": "/21-days-recipes", "dest": "/21-days-recipes.html" },
+    { "src": "/thank-you", "dest": "/thank-you.html" },
+    { "src": "/privacy", "dest": "/privacy.html" },
+    { "src": "/terms", "dest": "/terms.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

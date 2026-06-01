@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Protein-First Protocol — Free Guide — The Nams Lifestyle</title>
+  <meta name="description" content="Get the free Protein-First Protocol guide. The exact framework built for women over 40 — protein targets, meal timing, and the mechanism behind why it works." />
+  <meta property="og:title" content="The Protein-First Protocol — Free Guide" />
+  <meta property="og:description" content="Fix the protein gap. Start this week. Free for women 40+." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.thenamslifestyle.com/protein-first-protocol" />
+  <meta name="theme-color" content="#f7f1e3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vanilla:    #f7f1e3;
+      --vanilla-d:  #ede4ce;
+      --plum:       #4f0c28;
+      --plum-mid:   #6b1035;
+      --plum-light: #f5eaee;
+      --strawberry: #f9cdd5;
+      --straw-mid:  #f0a8b4;
+      --spirulina:  #183b23;
+      --spir-light: #e8f0ea;
+      --guacamole:  #4a6741;
+      --guac-light: #edf2ec;
+      --ink:        #1a1a1f;
+      --ink-soft:   #3d3d44;
+      --ink-muted:  #7a7a85;
+      --white:      #ffffff;
+      --font-disp:  'Noto Serif Display', Georgia, serif;
+      --font-sub:   'Cormorant Garamond', Georgia, serif;
+      --font-body:  'Montserrat', sans-serif;
+      --font-script:'Pinyon Script', cursive;
+      --max-w: 1060px;
+    }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--vanilla);
+      color: var(--ink);
+      font-size: 16px; line-height:1.7;
+      overflow-x:hidden; -webkit-font-smoothing:antialiased;
+    }
+    a { text-decoration:none; color:inherit; }
+
+    /* ─── NAV ─── */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      background:rgba(247,241,227,0.96); backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(79,12,40,0.1);
+      padding:0 44px; height:68px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .nav-brand { display:flex; align-items:baseline; gap:8px; }
+    .nav-script { font-family:var(--font-script); font-size:30px; color:var(--plum); line-height:1; }
+    .nav-word { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-muted); }
+    .nav-back {
+      font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;
+      color:var(--ink-muted); transition:color 0.2s;
+      display:flex; align-items:center; gap:6px;
+    }
+    .nav-back:hover { color:var(--plum); }
+
+    /* ─── HERO ─── */
+    .pfp-hero {
+      min-height:100vh;
+      background:var(--vanilla);
+      padding:110px 44px 80px;
+      display:flex; align-items:center;
+      position:relative; overflow:hidden;
+    }
+    /* Large decorative number */
+    .pfp-hero-deco {
+      position:absolute; right:-60px; top:50%;
+      transform:translateY(-50%);
+      font-family:var(--font-disp); font-size:clamp(300px,32vw,460px);
+      font-weight:900; line-height:1;
+      color:rgba(79,12,40,0.04); pointer-events:none; user-select:none;
+      letter-spacing:-0.06em;
+    }
+    .pfp-hero-inner {
+      max-width:var(--max-w); margin:0 auto; width:100%;
+      display:grid; grid-template-columns:1.1fr 0.9fr;
+      gap:72px; align-items:center; position:relative; z-index:1;
+    }
+
+    /* Left */
+    .eyebrow-row { display:flex; align-items:center; gap:12px; margin-bottom:28px; }
+    .e-dash { width:32px; height:1px; background:var(--plum); }
+    .e-txt { font-size:10px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--plum); }
+    .pfp-hl {
+      font-family:var(--font-disp);
+      font-size:clamp(48px,5.5vw,84px);
+      font-weight:900; line-height:0.96;
+      letter-spacing:-0.03em; color:var(--ink);
+      margin-bottom:6px;
+    }
+    .pfp-hl em { font-style:italic; font-weight:300; color:var(--plum); }
+    .pfp-script {
+      font-family:var(--font-script);
+      font-size:clamp(60px,6.5vw,100px);
+      color:var(--plum); line-height:0.82;
+      display:block; margin-bottom:4px;
+    }
+    .pfp-sub {
+      font-family:var(--font-sub);
+      font-size:20px; font-style:italic; font-weight:300;
+      color:var(--ink-soft); margin-bottom:28px; line-height:1.6;
+    }
+    .pfp-body {
+      font-size:14px; font-weight:300;
+      color:var(--ink-muted); line-height:1.9; max-width:440px; margin-bottom:36px;
+    }
+
+    /* What's inside teaser */
+    .pfp-inside {
+      display:flex; flex-direction:column; gap:10px; margin-bottom:36px;
+    }
+    .inside-item {
+      display:flex; gap:12px; align-items:flex-start;
+      font-size:13px; line-height:1.65; color:var(--ink-soft); font-weight:400;
+    }
+    .inside-icon {
+      width:20px; height:20px; background:var(--plum-light);
+      border-radius:50%; display:flex; align-items:center; justify-content:center;
+      flex-shrink:0; margin-top:1px;
+    }
+    .inside-icon svg { width:10px; height:10px; }
+
+    /* Social proof strip */
+    .pfp-proof {
+      display:flex; gap:24px; padding-top:28px;
+      border-top:1px solid rgba(79,12,40,0.1);
+    }
+    .proof-item { text-align:center; }
+    .proof-n {
+      font-family:var(--font-disp); font-size:26px; font-weight:900;
+      color:var(--plum); line-height:1;
+    }
+    .proof-l { font-size:10px; font-weight:400; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-muted); margin-top:4px; }
+
+    /* Right — capture card */
+    .pfp-capture {
+      background:var(--white);
+      border:1px solid rgba(79,12,40,0.1);
+      overflow:hidden;
+      position:sticky; top:90px;
+    }
+    .pfp-cap-cover {
+      background:var(--plum);
+      padding:36px 32px;
+      position:relative;
+    }
+    .pfp-cap-cover::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:2px;
+      background:linear-gradient(90deg,var(--straw-mid),transparent);
+    }
+    .cap-cover-free {
+      font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;
+      color:rgba(249,205,213,0.5); margin-bottom:14px;
+    }
+    .cap-cover-title {
+      font-family:var(--font-disp);
+      font-size:clamp(26px,3vw,36px); font-weight:900;
+      color:var(--white); line-height:1.08;
+    }
+    .cap-cover-title em { font-style:italic; font-weight:300; color:var(--strawberry); }
+    .cap-cover-author {
+      font-family:var(--font-script);
+      font-size:22px; color:rgba(249,205,213,0.45); margin-top:10px;
+    }
+    .pfp-cap-form { padding:32px; }
+    .cap-form-label {
+      font-size:10px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase;
+      color:var(--plum); margin-bottom:8px;
+    }
+    .cap-form-title {
+      font-family:var(--font-disp);
+      font-size:20px; font-weight:700; color:var(--ink); margin-bottom:6px; line-height:1.2;
+    }
+    .cap-form-sub {
+      font-family:var(--font-sub); font-style:italic; font-size:15px; font-weight:300;
+      color:var(--ink-muted); margin-bottom:24px; line-height:1.5;
+    }
+    .cap-input {
+      width:100%; background:var(--vanilla); border:1px solid rgba(79,12,40,0.15);
+      color:var(--ink); padding:13px 16px;
+      font-family:var(--font-body); font-size:13px; font-weight:300;
+      outline:none; transition:border-color 0.2s; margin-bottom:10px; display:block;
+    }
+    .cap-input::placeholder { color:var(--ink-muted); }
+    .cap-input:focus { border-color:var(--plum); }
+    .cap-btn {
+      width:100%; background:var(--plum); color:var(--vanilla); border:none;
+      padding:15px; font-family:var(--font-body); font-size:10px; font-weight:700;
+      letter-spacing:0.2em; text-transform:uppercase; cursor:pointer; transition:background 0.2s;
+    }
+    .cap-btn:hover { background:var(--plum-mid); }
+    .cap-disc { font-size:10px; color:var(--ink-muted); text-align:center; margin-top:10px; }
+    .cap-guarantees {
+      border-top:1px solid rgba(79,12,40,0.08);
+      padding:20px 32px; display:flex; flex-direction:column; gap:8px;
+    }
+    .cap-g-item {
+      display:flex; gap:10px; align-items:center;
+      font-size:12px; color:var(--ink-soft); font-weight:300;
+    }
+    .cap-g-dot { width:5px; height:5px; background:var(--spirulina); border-radius:50%; flex-shrink:0; }
+
+    /* toast */
+    .toast {
+      display:none; background:var(--spirulina); color:var(--white);
+      padding:12px 16px; font-size:12px; font-weight:500; letter-spacing:0.05em;
+      text-align:center; margin-top:10px;
+    }
+    .toast.show { display:block; }
+
+    /* ─── MECHANISM SECTION ─── */
+    .mechanism { background:var(--white); padding:96px 44px; }
+    .mech-inner {
+      max-width:var(--max-w); margin:0 auto;
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:80px; align-items:start;
+    }
+    .sec-lbl { font-size:10px; font-weight:600; letter-spacing:0.24em; text-transform:uppercase; color:var(--plum); margin-bottom:16px; }
+    .sec-hl { font-family:var(--font-disp); font-size:clamp(30px,3.2vw,46px); font-weight:900; letter-spacing:-0.025em; color:var(--ink); line-height:1.07; margin-bottom:24px; }
+    .sec-hl em { font-style:italic; font-weight:300; }
+    .mech-body {
+      font-family:var(--font-sub); font-size:17px; font-weight:300; font-style:italic;
+      color:var(--ink-soft); line-height:1.95; margin-bottom:28px;
+    }
+    .mech-facts {
+      display:flex; flex-direction:column; gap:20px;
+    }
+    .fact-card {
+      background:var(--vanilla); padding:24px;
+      border-left:3px solid var(--plum);
+    }
+    .fact-term {
+      font-family:var(--font-disp); font-size:16px; font-weight:700;
+      color:var(--plum); margin-bottom:6px;
+    }
+    .fact-def {
+      font-size:13px; line-height:1.75; color:var(--ink-soft); font-weight:300;
+    }
+
+    /* Right mechanism panels */
+    .mech-panels { display:flex; flex-direction:column; gap:3px; }
+    .mech-panel { padding:28px 24px; }
+    .mp-plum { background:var(--plum); color:var(--white); }
+    .mp-van { background:var(--vanilla-d); }
+    .mp-spir { background:var(--spirulina); color:var(--white); }
+    .mp-guac { background:var(--guac-light); }
+    .mp-num {
+      font-family:var(--font-disp); font-size:12px; font-weight:700;
+      letter-spacing:0.1em; margin-bottom:8px; opacity:0.5;
+    }
+    .mp-title {
+      font-family:var(--font-disp); font-size:18px; font-weight:700;
+      line-height:1.2; margin-bottom:8px;
+    }
+    .mp-body { font-size:13px; line-height:1.75; font-weight:300; opacity:0.75; }
+
+    /* ─── WHAT'S INSIDE ─── */
+    .inside { background:var(--vanilla-d); padding:96px 44px; }
+    .inside-inner { max-width:var(--max-w); margin:0 auto; }
+    .inside-grid {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:3px; margin-top:56px;
+    }
+    .ins-card { padding:36px 28px; background:var(--white); }
+    .ins-card:nth-child(2) { background:var(--plum); color:var(--white); }
+    .ins-card:nth-child(5) { background:var(--spirulina); color:var(--white); }
+    .ins-num {
+      font-family:var(--font-disp); font-size:11px; font-weight:700;
+      letter-spacing:0.12em; color:var(--plum); margin-bottom:12px;
+    }
+    .ins-card:nth-child(2) .ins-num { color:var(--straw-mid); }
+    .ins-card:nth-child(5) .ins-num { color:var(--straw-mid); }
+    .ins-title {
+      font-family:var(--font-disp); font-size:18px; font-weight:700;
+      line-height:1.25; margin-bottom:10px;
+    }
+    .ins-body { font-size:13px; line-height:1.75; font-weight:300; opacity:0.7; }
+
+    /* ─── FOR WHO ─── */
+    .for-who { background:var(--white); padding:96px 44px; }
+    .fw-inner { max-width:860px; margin:0 auto; }
+    .fw-grid { display:grid; grid-template-columns:1fr 1fr; gap:3px; margin-top:48px; }
+    .fw-yes { background:var(--spir-light); padding:32px; border-top:3px solid var(--spirulina); }
+    .fw-no { background:var(--plum-light); padding:32px; border-top:3px solid var(--plum); }
+    .fw-label {
+      font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;
+      margin-bottom:20px;
+    }
+    .fw-yes .fw-label { color:var(--spirulina); }
+    .fw-no .fw-label { color:var(--plum); }
+    .fw-list { list-style:none; display:flex; flex-direction:column; gap:12px; }
+    .fw-list li {
+      display:flex; gap:12px; align-items:flex-start;
+      font-size:13px; line-height:1.65; color:var(--ink-soft); font-weight:300;
+    }
+    .fw-list li::before { min-width:14px; font-weight:700; margin-top:1px; }
+    .fw-yes .fw-list li::before { content:'✓'; color:var(--spirulina); }
+    .fw-no .fw-list li::before { content:'✗'; color:var(--plum); }
+
+    /* ─── BOTTOM CAPTURE ─── */
+    .bottom-cap { background:var(--plum); padding:88px 44px; }
+    .bc-inner { max-width:700px; margin:0 auto; text-align:center; }
+    .bc-script {
+      font-family:var(--font-script);
+      font-size:clamp(54px,6vw,84px);
+      color:var(--straw-mid); line-height:0.88;
+      display:block; margin-bottom:8px;
+    }
+    .bc-hl {
+      font-family:var(--font-disp);
+      font-size:clamp(36px,4.5vw,60px);
+      font-weight:900; letter-spacing:-0.025em;
+      color:var(--white); line-height:1.0; margin-bottom:18px;
+    }
+    .bc-hl em { font-style:italic; font-weight:300; color:var(--strawberry); }
+    .bc-sub {
+      font-family:var(--font-sub); font-style:italic; font-size:17px; font-weight:300;
+      color:rgba(247,241,227,0.55); margin-bottom:40px; line-height:1.7;
+    }
+    .bc-form { display:grid; grid-template-columns:1fr 1fr auto; gap:0; max-width:560px; margin:0 auto 14px; }
+    .bc-input {
+      background:rgba(247,241,227,0.08); border:1px solid rgba(247,241,227,0.2);
+      border-right:none; color:var(--white); padding:15px 18px;
+      font-family:var(--font-body); font-size:13px; font-weight:300; outline:none;
+    }
+    .bc-input::placeholder { color:rgba(247,241,227,0.3); }
+    .bc-btn {
+      background:var(--strawberry); color:var(--plum); border:none;
+      padding:15px 24px; font-family:var(--font-body); font-size:10px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; transition:background 0.2s; white-space:nowrap;
+    }
+    .bc-btn:hover { background:var(--straw-mid); }
+    .bc-disc { font-size:10px; color:rgba(247,241,227,0.3); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background:var(--ink); padding:40px 44px 28px;
+      color:rgba(247,241,227,0.4);
+    }
+    .ft-simple {
+      max-width:var(--max-w); margin:0 auto;
+      display:flex; justify-content:space-between; align-items:center;
+      flex-wrap:wrap; gap:20px;
+      padding-bottom:20px; margin-bottom:20px;
+      border-bottom:1px solid rgba(247,241,227,0.07);
+    }
+    .ft-brand-s { display:flex; align-items:baseline; gap:8px; }
+    .ft-script-s { font-family:var(--font-script); font-size:28px; color:var(--straw-mid); }
+    .ft-word-s { font-size:10px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:rgba(247,241,227,0.28); }
+    .ft-nav-s { display:flex; gap:24px; list-style:none; flex-wrap:wrap; }
+    .ft-nav-s a { font-size:12px; font-weight:300; color:rgba(247,241,227,0.45); transition:color 0.2s; }
+    .ft-nav-s a:hover { color:var(--white); }
+    .ft-copy-s { font-size:11px; color:rgba(247,241,227,0.25); max-width:var(--max-w); margin:0 auto; }
+
+    /* ─── REVEAL ─── */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width:960px){
+      nav { padding:0 20px; }
+      .pfp-hero { padding:90px 20px 60px; }
+      .pfp-hero-inner { grid-template-columns:1fr; gap:48px; }
+      .pfp-hero-deco { display:none; }
+      .pfp-capture { position:static; }
+      .mech-inner { grid-template-columns:1fr; gap:48px; }
+      .inside-grid { grid-template-columns:1fr 1fr; }
+      .fw-grid { grid-template-columns:1fr; }
+      .bc-form { grid-template-columns:1fr; }
+      .bc-input { border-right:1px solid rgba(247,241,227,0.2); }
+      .mechanism,.inside,.for-who,.bottom-cap { padding:70px 20px; }
+      footer { padding:32px 20px 20px; }
+      .ft-simple { flex-direction:column; align-items:flex-start; }
+    }
+    @media(max-width:600px){
+      .inside-grid { grid-template-columns:1fr; }
+      .pfp-proof { gap:16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-brand">
+      <span class="nav-script">Nams</span>
+      <span class="nav-word">The Nams Lifestyle</span>
+    </a>
+    <a href="/" class="nav-back">
+      ← All Resources
+    </a>
+  </nav>
+
+  <!-- ══ HERO ══════════════════════════════════════ -->
+  <section class="pfp-hero">
+    <div class="pfp-hero-deco">01</div>
+    <div class="pfp-hero-inner">
+
+      <!-- Left -->
+      <div>
+        <div class="eyebrow-row">
+          <div class="e-dash"></div>
+          <span class="e-txt">Free Guide — Pillar Two — Nutrition &amp; Protein-First</span>
+        </div>
+        <h1 class="pfp-hl">
+          The<br />
+          <span class="pfp-script">Protein-First</span>
+          <em>Protocol.</em>
+        </h1>
+        <p class="pfp-sub">The mechanism, the targets, and the system — built for women over 40.</p>
+        <p class="pfp-body">
+          Most women over 40 are eating too little protein, not too much food. This guide explains
+          exactly why — and gives you the specific inputs to fix it. Not generic nutrition advice.
+          The protein-first system, calibrated for your biology.
+        </p>
+
+        <div class="pfp-inside">
+          <div class="inside-item">
+            <div class="inside-icon">
+              <svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="1.5"><polyline points="1,5 3.5,7.5 9,2"/></svg>
+            </div>
+            <span>Why mTOR signaling changes after 40 — and what to do with that</span>
+          </div>
+          <div class="inside-item">
+            <div class="inside-icon">
+              <svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="1.5"><polyline points="1,5 3.5,7.5 9,2"/></svg>
+            </div>
+            <span>Exact protein targets calibrated for post-40 anabolic resistance</span>
+          </div>
+          <div class="inside-item">
+            <div class="inside-icon">
+              <svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="1.5"><polyline points="1,5 3.5,7.5 9,2"/></svg>
+            </div>
+            <span>What 30g looks like at breakfast, lunch, and dinner — real food examples</span>
+          </div>
+          <div class="inside-item">
+            <div class="inside-icon">
+              <svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="1.5"><polyline points="1,5 3.5,7.5 9,2"/></svg>
+            </div>
+            <span>The 3-day protein audit to find your exact daily deficit</span>
+          </div>
+          <div class="inside-item">
+            <div class="inside-icon">
+              <svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="1.5"><polyline points="1,5 3.5,7.5 9,2"/></svg>
+            </div>
+            <span>Meal timing built around circadian cortisol patterns</span>
+          </div>
+        </div>
+
+        <div class="pfp-proof">
+          <div class="proof-item">
+            <div class="proof-n">30g</div>
+            <div class="proof-l">Minimum per meal</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-n">3 day</div>
+            <div class="proof-l">Audit included</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-n">100%</div>
+            <div class="proof-l">Free forever</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — capture -->
+      <div class="pfp-capture" id="get-guide">
+        <div class="pfp-cap-cover">
+          <div class="cap-cover-free">Free Guide — The Nams Lifestyle</div>
+          <div class="cap-cover-title">The Protein-<br /><em>First</em> Protocol</div>
+          <div class="cap-cover-author">by Nams</div>
+        </div>
+        <div class="pfp-cap-form">
+          <div class="cap-form-label">Instant Access — Free</div>
+          <div class="cap-form-title">Get the Protocol Guide</div>
+          <div class="cap-form-sub">Enter your email and it's on its way immediately.</div>
+          <form onsubmit="handleCapture(event)">
+            <input class="cap-input" type="text" name="name" placeholder="First name" required />
+            <input class="cap-input" type="email" name="email" placeholder="Email address" required />
+            <button type="submit" class="cap-btn">Send Me the Free Guide →</button>
+            <div class="toast" id="main-toast">✓ Check your inbox — it's on its way.</div>
+          </form>
+          <p class="cap-disc">No spam. Unsubscribe any time.</p>
+        </div>
+        <div class="cap-guarantees">
+          <div class="cap-g-item"><div class="cap-g-dot"></div><span>Instant download — no waiting</span></div>
+          <div class="cap-g-item"><div class="cap-g-dot"></div><span>Built for women over 40 specifically</span></div>
+          <div class="cap-g-item"><div class="cap-g-dot"></div><span>Science-backed, not generic wellness advice</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ MECHANISM ══════════════════════════════════ -->
+  <section class="mechanism">
+    <div class="mech-inner">
+      <div class="reveal">
+        <div class="sec-lbl">Why It Stops Working After 40</div>
+        <h2 class="sec-hl">The mechanism<br /><em>most guides skip.</em></h2>
+        <p class="mech-body">
+          Generic nutrition advice was not written for the 40+ operating system. Your estrogen is shifting.
+          Your anabolic signalling has blunted. Your cortisol patterns have changed. The same inputs
+          that worked at 32 produce different outputs at 44. That's not failure — that's biology.
+          Understanding it is the first step to working with it.
+        </p>
+        <div class="mech-facts">
+          <div class="fact-card">
+            <div class="fact-term">Anabolic Resistance</div>
+            <div class="fact-def">After 40, your muscles need a higher protein dose to trigger the same muscle-building response. The threshold moves up — which means the dose that worked before is now insufficient.</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-term">mTOR Signalling</div>
+            <div class="fact-def">mTOR is the cellular switch that tells your body to build muscle. Leucine — found in animal proteins — is the primary activator. If you're not hitting 30g per meal, you may not be crossing the threshold to turn it on.</div>
+          </div>
+          <div class="fact-card" style="border-color:var(--spirulina);">
+            <div class="fact-term" style="color:var(--spirulina);">Circadian Cortisol</div>
+            <div class="fact-def">Cortisol peaks in the morning and should taper by evening. Eating protein early anchors your metabolism for the day. Skipping breakfast or eating low-protein in the morning is working against your own cortisol rhythm.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mech-panels reveal">
+        <div class="mech-panel mp-plum">
+          <div class="mp-num">01</div>
+          <div class="mp-title">The Protein Gap</div>
+          <p class="mp-body">Most women over 40 are eating 40–60g of protein per day. The target for muscle maintenance and anabolic resistance is 1.6–2.2g per kg of bodyweight. The gap is where the stall lives.</p>
+        </div>
+        <div class="mech-panel mp-van">
+          <div class="mp-num">02</div>
+          <div class="mp-title">Why Less Stops Working</div>
+          <p class="mp-body">Caloric restriction lowers muscle protein synthesis. After 40, this is especially costly — you lose muscle faster and the metabolic rate drops with it. Eating less doesn't solve the problem. It deepens it.</p>
+        </div>
+        <div class="mech-panel mp-spir">
+          <div class="mp-num">03</div>
+          <div class="mp-title">The Fix: Protein-First</div>
+          <p class="mp-body">Hit protein targets first — at every meal. Let carbohydrates and fats fill the rest of the plate. This one structural shift changes the metabolic outcome without requiring restriction, counting, or deprivation.</p>
+        </div>
+        <div class="mech-panel mp-guac">
+          <div class="mp-num">04</div>
+          <div class="mp-title">Muscle as Infrastructure</div>
+          <p class="mp-body">You are not eating protein to look good. You are eating protein to maintain the organ that regulates your metabolism, protects your bones, and determines your healthspan. Muscle is not optional after 40.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHAT'S INSIDE ══════════════════════════════ -->
+  <section class="inside">
+    <div class="inside-inner">
+      <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+        <div class="sec-lbl">Inside the Guide</div>
+        <h2 class="sec-hl" style="font-size:clamp(30px,3.5vw,50px);">Six sections.<br /><em>Everything you need to start.</em></h2>
+      </div>
+      <div class="inside-grid">
+        <div class="ins-card reveal">
+          <div class="ins-num">Section 01</div>
+          <div class="ins-title">The Mechanism</div>
+          <p class="ins-body">Why protein is the missing variable for women over 40. mTOR, anabolic resistance, and what changes at the cellular level.</p>
+        </div>
+        <div class="ins-card reveal">
+          <div class="ins-num">Section 02</div>
+          <div class="ins-title">Your Protein Targets</div>
+          <p class="ins-body">Exact targets calculated for post-40 anabolic resistance. Not the generic RDA — the threshold that actually triggers muscle protein synthesis.</p>
+        </div>
+        <div class="ins-card reveal">
+          <div class="ins-num">Section 03</div>
+          <div class="ins-title">What 30g Looks Like</div>
+          <p class="ins-body">Real food examples at every meal. Breakfast, lunch, dinner. Combinations that hit the threshold without effort, measurement obsession, or meal prep marathons.</p>
+        </div>
+        <div class="ins-card reveal">
+          <div class="ins-num">Section 04</div>
+          <div class="ins-title">The 3-Day Audit</div>
+          <p class="ins-body">A simple framework to find your exact protein deficit right now. No app required. Three days, honest tracking, a clear number to close.</p>
+        </div>
+        <div class="ins-card reveal">
+          <div class="ins-num">Section 05</div>
+          <div class="ins-title">Meal Timing</div>
+          <p class="ins-body">How to time protein intake around circadian cortisol patterns for maximum effect. Morning anchoring, pre- and post-training windows, and evening recovery.</p>
+        </div>
+        <div class="ins-card reveal">
+          <div class="ins-num">Section 06</div>
+          <div class="ins-title">The Week One Plan</div>
+          <p class="ins-body">A simple seven-day protein-first structure to start immediately. Not a meal plan — a decision framework that works regardless of what you're eating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOR WHO ═════════════════════════════════════ -->
+  <section class="for-who">
+    <div class="fw-inner">
+      <div class="reveal" style="text-align:center; margin-bottom:0;">
+        <div class="sec-lbl">Is This for You?</div>
+        <h2 class="sec-hl" style="font-size:clamp(30px,3.2vw,46px);">This guide is <em>specific.</em><br />Not for everyone — and that's deliberate.</h2>
+      </div>
+      <div class="fw-grid">
+        <div class="fw-yes reveal">
+          <div class="fw-label">This is for you if —</div>
+          <ul class="fw-list">
+            <li>You're over 40 and feel like your body stopped responding the way it used to</li>
+            <li>You're eating what you consider "healthy" but still not seeing results</li>
+            <li>You want to understand the mechanism, not just follow instructions</li>
+            <li>You're done with generic advice that wasn't built for your biology</li>
+            <li>You want practical systems that work in real life — not a meal-prep competition</li>
+          </ul>
+        </div>
+        <div class="fw-no reveal">
+          <div class="fw-label">This is not for you if —</div>
+          <ul class="fw-list">
+            <li>You're looking for a quick fix or a 7-day drop weight approach</li>
+            <li>You want to be told to restrict more and move more</li>
+            <li>You're looking for a generic clean-eating plan or a detox</li>
+            <li>You prefer inspiration over mechanism and information</li>
+            <li>You want someone to do the thinking for you — this requires your participation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BOTTOM CAPTURE ═════════════════════════════ -->
+  <section class="bottom-cap">
+    <div class="bc-inner reveal">
+      <span class="bc-script">Protein first.</span>
+      <h2 class="bc-hl"><em>Everything else follows.</em></h2>
+      <p class="bc-sub">The guide is free. The mechanism is real. The results compound over time — not in 7 days. Get it now and start this week.</p>
+      <form onsubmit="handleBottomCapture(event)">
+        <div class="bc-form">
+          <input class="bc-input" type="text" name="name" id="bc-name" placeholder="First name" required />
+          <input class="bc-input" type="email" name="email" id="bc-email" placeholder="Email address" required />
+          <button type="submit" class="bc-btn">Get the Free Guide →</button>
+        </div>
+        <div class="toast" id="bottom-toast" style="background:var(--spirulina);margin-top:12px;">✓ On its way — check your inbox.</div>
+      </form>
+      <p class="bc-disc">No spam. Unsubscribe any time.</p>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═════════════════════════════════════ -->
+  <footer>
+    <div class="ft-simple">
+      <div class="ft-brand-s">
+        <span class="ft-script-s">Nams</span>
+        <span class="ft-word-s">The Nams Lifestyle</span>
+      </div>
+      <ul class="ft-nav-s">
+        <li><a href="/">Home</a></li>
+        <li><a href="/protein-first-grocery-list">Free Grocery List</a></li>
+        <li><a href="/#shop">Products</a></li>
+        <li><a href="https://instagram.com/thenamslifestyle" target="_blank">@thenamslifestyle</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+      </ul>
+    </div>
+    <p class="ft-copy-s">© 2025 The Nams Lifestyle. All rights reserved. — Nams. The Protein-First Protocol.</p>
+  </footer>
+
+  <script>
+    function handleCapture(e) {
+      e.preventDefault();
+      const name = e.target.querySelector('[name="name"]').value;
+      const email = e.target.querySelector('[name="email"]').value;
+      // TODO: POST to Kit API → window.location.href = '/thank-you?guide=protein-first-protocol';
+      document.getElementById('main-toast').classList.add('show');
+      const btn = e.target.querySelector('.cap-btn');
+      btn.textContent = '✓ Guide Sent — Check Your Inbox';
+      btn.style.background = 'var(--spirulina)';
+      console.log('Sub:', {name, email, source: 'protein-first-protocol'});
+    }
+    function handleBottomCapture(e) {
+      e.preventDefault();
+      const name = document.getElementById('bc-name').value;
+      const email = document.getElementById('bc-email').value;
+      // TODO: POST to Kit API → window.location.href = '/thank-you?guide=protein-first-protocol';
+      document.getElementById('bottom-toast').classList.add('show');
+      const btn = e.target.querySelector('.bc-btn');
+      btn.textContent = '✓ Sent'; btn.style.background = 'var(--spirulina)';
+      console.log('Sub:', {name, email, source: 'protein-first-protocol-bottom'});
+    }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>

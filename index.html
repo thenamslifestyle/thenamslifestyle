@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Nams Lifestyle — Protein-First Wellness for Women 40+</title>
+  <meta name="description" content="Science-backed, protein-first nutrition and longevity systems built specifically for women over 40. Real mechanisms. Real results. No generic advice." />
+  <meta property="og:title" content="The Nams Lifestyle" />
+  <meta property="og:description" content="Protein-first wellness for women 40+. Built on mechanism, not motivation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.thenamslifestyle.com" />
+  <meta name="theme-color" content="#f7f1e3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    /* ─── TOKENS ─────────────────────────────────── */
+    :root {
+      --vanilla:     #f7f1e3;
+      --vanilla-d:   #ede4ce;
+      --plum:        #4f0c28;
+      --plum-mid:    #6b1035;
+      --plum-light:  #f5eaee;
+      --strawberry:  #f9cdd5;
+      --straw-mid:   #f0a8b4;
+      --spirulina:   #183b23;
+      --spir-mid:    #1e4f2e;
+      --spir-light:  #e8f0ea;
+      --guacamole:   #4a6741;
+      --guac-light:  #edf2ec;
+      --ink:         #1a1a1f;
+      --ink-soft:    #3d3d44;
+      --ink-muted:   #7a7a85;
+      --white:       #ffffff;
+      --font-disp:   'Noto Serif Display', Georgia, serif;
+      --font-sub:    'Cormorant Garamond', Georgia, serif;
+      --font-body:   'Montserrat', sans-serif;
+      --font-script: 'Pinyon Script', cursive;
+      --max-w: 1100px;
+      --r: 0px;
+    }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--vanilla);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width:100%; display:block; }
+    a { text-decoration:none; color:inherit; }
+
+    /* ─── NAV ─────────────────────────────────────── */
+    nav {
+      position: fixed; top:0; left:0; right:0; z-index:100;
+      background: rgba(247,241,227,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(79,12,40,0.1);
+      padding: 0 44px;
+      height: 68px;
+      display: flex; align-items:center; justify-content:space-between;
+      transition: box-shadow 0.3s;
+    }
+    .nav-brand {
+      display:flex; align-items:baseline; gap:8px;
+    }
+    .nav-script {
+      font-family: var(--font-script);
+      font-size: 30px; color: var(--plum); line-height:1;
+    }
+    .nav-wordmark {
+      font-family: var(--font-body);
+      font-size: 10px; font-weight:600;
+      letter-spacing: 0.22em; text-transform:uppercase;
+      color: var(--ink-muted);
+    }
+    .nav-links {
+      display:flex; align-items:center; gap:32px;
+      list-style:none;
+    }
+    .nav-links a {
+      font-size: 11px; font-weight:500;
+      letter-spacing: 0.14em; text-transform:uppercase;
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--plum); }
+    .nav-cta {
+      background: var(--plum);
+      color: var(--vanilla);
+      padding: 10px 22px;
+      font-family: var(--font-body);
+      font-size: 10px; font-weight:700;
+      letter-spacing: 0.18em; text-transform:uppercase;
+      border: none; cursor:pointer;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--plum-mid); }
+
+    /* ─── HERO ────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      background: var(--vanilla);
+      padding: 120px 44px 80px;
+      display: flex; align-items:center;
+      position: relative; overflow:hidden;
+    }
+    /* Large editorial background letter */
+    .hero-bg-letter {
+      position:absolute; right:-40px; top:50%;
+      transform: translateY(-50%);
+      font-family: var(--font-disp);
+      font-size: clamp(280px,28vw,420px);
+      font-weight:900; line-height:1;
+      color: rgba(79,12,40,0.04);
+      pointer-events:none; user-select:none;
+      letter-spacing:-0.06em;
+    }
+    .hero-inner {
+      max-width: var(--max-w); margin:0 auto; width:100%;
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:80px; align-items:center;
+      position:relative; z-index:1;
+    }
+    .hero-eyebrow {
+      display:flex; align-items:center; gap:12px;
+      margin-bottom:28px;
+    }
+    .eyebrow-dash { width:32px; height:1px; background:var(--plum); }
+    .eyebrow-text {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.22em; text-transform:uppercase;
+      color: var(--plum);
+    }
+    h1.hero-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(46px,5.2vw,78px);
+      font-weight:900; line-height:0.97;
+      letter-spacing:-0.03em;
+      color: var(--ink); margin-bottom:10px;
+    }
+    h1.hero-hl em {
+      font-style:italic; font-weight:300;
+      color: var(--plum);
+    }
+    .hero-script-line {
+      font-family: var(--font-script);
+      font-size: clamp(56px,6vw,90px);
+      color: var(--plum); line-height:0.85;
+      display:block; margin-bottom:-4px;
+    }
+    .hero-sub {
+      font-family: var(--font-sub);
+      font-size:19px; font-style:italic; font-weight:300;
+      color: var(--ink-soft);
+      margin-bottom:28px; line-height:1.6;
+      max-width:480px;
+    }
+    .hero-body {
+      font-size:14px; font-weight:300;
+      color: var(--ink-muted); line-height:1.9;
+      max-width:460px; margin-bottom:40px;
+    }
+    .hero-ctas {
+      display:flex; gap:14px; flex-wrap:wrap;
+      margin-bottom:52px;
+    }
+    .btn-solid {
+      background: var(--plum); color: var(--vanilla);
+      padding: 14px 28px;
+      font-family: var(--font-body);
+      font-size:10px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase;
+      border:none; cursor:pointer; transition:background 0.2s;
+      display:inline-flex; align-items:center; gap:8px;
+    }
+    .btn-solid:hover { background: var(--plum-mid); }
+    .btn-outline {
+      background: transparent; color: var(--plum);
+      border: 1.5px solid var(--plum);
+      padding: 14px 28px;
+      font-family: var(--font-body);
+      font-size:10px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase;
+      cursor:pointer; transition:all 0.2s;
+      display:inline-flex; align-items:center; gap:8px;
+    }
+    .btn-outline:hover { background:var(--plum); color:var(--vanilla); }
+
+    /* Hero stats row */
+    .hero-stats {
+      display:flex; gap:36px;
+      padding-top:36px;
+      border-top: 1px solid rgba(79,12,40,0.12);
+    }
+    .stat { }
+    .stat-n {
+      font-family: var(--font-disp);
+      font-size:30px; font-weight:900;
+      color: var(--plum); line-height:1;
+    }
+    .stat-l {
+      font-size:10px; font-weight:400;
+      letter-spacing:0.1em; text-transform:uppercase;
+      color: var(--ink-muted); margin-top:4px;
+    }
+
+    /* Hero right — free guides showcase */
+    .hero-guides {
+      display:flex; flex-direction:column; gap:16px;
+    }
+    .hero-guide-card {
+      background: var(--white);
+      border: 1px solid rgba(79,12,40,0.08);
+      padding:28px;
+      display:grid; grid-template-columns:72px 1fr;
+      gap:20px; align-items:center;
+      transition: box-shadow 0.25s, transform 0.25s;
+      cursor:pointer;
+    }
+    .hero-guide-card:hover {
+      box-shadow: 0 8px 32px rgba(79,12,40,0.1);
+      transform: translateY(-2px);
+    }
+    .guide-thumb {
+      aspect-ratio:3/4;
+      display:flex; flex-direction:column;
+      justify-content:space-between;
+      padding:10px 8px;
+      position:relative;
+    }
+    .gt-plum { background: var(--plum); }
+    .gt-spir { background: var(--spirulina); }
+    .guide-thumb-tag {
+      font-size:7px; font-weight:700;
+      letter-spacing:0.16em; text-transform:uppercase;
+      color: rgba(247,241,227,0.5);
+    }
+    .guide-thumb-title {
+      font-family: var(--font-disp);
+      font-size:11px; font-weight:900;
+      color: var(--white); line-height:1.15;
+    }
+    .guide-thumb-title em { font-style:italic; color: var(--strawberry); }
+    .guide-card-label {
+      font-size:9px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase;
+      color: var(--plum); margin-bottom:6px;
+    }
+    .guide-card-title {
+      font-family: var(--font-disp);
+      font-size:17px; font-weight:700;
+      line-height:1.2; color: var(--ink);
+      margin-bottom:6px;
+    }
+    .guide-card-desc {
+      font-size:12px; font-weight:300;
+      color: var(--ink-muted); line-height:1.7;
+      margin-bottom:12px;
+    }
+    .guide-free-tag {
+      display:inline-flex; align-items:center; gap:6px;
+      font-size:10px; font-weight:700;
+      letter-spacing:0.12em; text-transform:uppercase;
+      color: var(--spirulina);
+    }
+    .hero-capture {
+      background: var(--plum);
+      padding:28px;
+      position:relative;
+      margin-top:4px;
+    }
+    .hero-capture::before {
+      content:'';
+      position:absolute; top:0; left:0; right:0; height:2px;
+      background: linear-gradient(90deg, var(--straw-mid), transparent);
+    }
+    .hc-label {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.2em; text-transform:uppercase;
+      color: var(--straw-mid); margin-bottom:10px;
+    }
+    .hc-title {
+      font-family: var(--font-disp);
+      font-size:20px; font-weight:700;
+      color: var(--white); line-height:1.2; margin-bottom:18px;
+    }
+    .hc-form { display:flex; gap:0; }
+    .hc-input {
+      flex:1;
+      background: rgba(247,241,227,0.08);
+      border: 1px solid rgba(247,241,227,0.2); border-right:none;
+      color: var(--white); padding:13px 16px;
+      font-family: var(--font-body); font-size:13px; font-weight:300;
+      outline:none; transition:border-color 0.2s;
+    }
+    .hc-input::placeholder { color:rgba(247,241,227,0.3); }
+    .hc-input:focus { border-color:var(--straw-mid); }
+    .hc-btn {
+      background: var(--strawberry);
+      color: var(--plum); border:none;
+      padding:13px 18px;
+      font-family: var(--font-body);
+      font-size:10px; font-weight:700;
+      letter-spacing:0.14em; text-transform:uppercase;
+      cursor:pointer; transition:background 0.2s; white-space:nowrap;
+    }
+    .hc-btn:hover { background: var(--straw-mid); }
+    .hc-disc {
+      font-size:10px; color:rgba(247,241,227,0.3);
+      margin-top:10px;
+    }
+
+    /* ─── TENSION BAND ────────────────────────────── */
+    .tension-band {
+      background: var(--plum);
+      padding:72px 44px;
+    }
+    .tb-inner {
+      max-width:780px; margin:0 auto; text-align:center;
+    }
+    .tb-eyebrow {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.24em; text-transform:uppercase;
+      color: var(--straw-mid); margin-bottom:22px;
+    }
+    .tb-hl {
+      font-family: var(--font-disp);
+      font-size:clamp(28px,3.8vw,52px);
+      font-weight:900; line-height:1.08;
+      letter-spacing:-0.02em; color: var(--white);
+      margin-bottom:24px;
+    }
+    .tb-hl em { font-style:italic; font-weight:300; color:var(--strawberry); }
+    .tb-body {
+      font-family: var(--font-sub);
+      font-size:18px; font-weight:300; font-style:italic;
+      color:rgba(247,241,227,0.6); line-height:1.9;
+    }
+    .script-accent {
+      font-family: var(--font-script);
+      font-size:1.5em; color:var(--strawberry); line-height:0.8;
+    }
+
+    /* ─── THREE PILLARS ───────────────────────────── */
+    .pillars { background:var(--vanilla); padding:100px 44px; }
+    .section-header { text-align:center; margin-bottom:60px; }
+    .sec-lbl {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.24em; text-transform:uppercase;
+      color: var(--plum); margin-bottom:16px;
+    }
+    .sec-hl {
+      font-family: var(--font-disp);
+      font-size:clamp(32px,3.6vw,52px);
+      font-weight:900; letter-spacing:-0.025em;
+      color: var(--ink); line-height:1.06;
+    }
+    .sec-hl em { font-style:italic; font-weight:300; }
+    .sec-sub {
+      font-family: var(--font-sub);
+      font-style:italic; font-size:18px; font-weight:300;
+      color: var(--ink-muted); margin-top:16px;
+      max-width:500px; margin-left:auto; margin-right:auto;
+    }
+    .pillars-grid {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:2px; max-width:var(--max-w); margin:0 auto;
+    }
+    .pillar {
+      padding:48px 36px; position:relative;
+      overflow:hidden; transition:transform 0.3s ease;
+    }
+    .pillar:hover { transform:translateY(-4px); }
+    .pl-ink { background:var(--ink); color:var(--white); }
+    .pl-van { background:var(--white); }
+    .pl-plum { background:var(--plum); color:var(--white); }
+    .pl-bg-n {
+      position:absolute; top:8px; right:12px;
+      font-family:var(--font-disp); font-size:100px;
+      font-weight:900; line-height:1; opacity:0.055;
+      user-select:none; pointer-events:none;
+    }
+    .pl-tag {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.2em; text-transform:uppercase;
+      margin-bottom:20px; opacity:0.5;
+    }
+    .pl-title {
+      font-family:var(--font-disp);
+      font-size:26px; font-weight:700;
+      line-height:1.15; margin-bottom:16px;
+    }
+    .pl-body {
+      font-size:13px; line-height:1.85;
+      font-weight:300; opacity:0.72; margin-bottom:24px;
+    }
+    .pl-quote {
+      font-family:var(--font-sub);
+      font-style:italic; font-size:13px; opacity:0.5;
+      border-left:2px solid var(--straw-mid);
+      padding-left:14px; line-height:1.6;
+    }
+    .pl-van .pl-quote { border-color:var(--plum); }
+
+    /* ─── FREE GUIDES ─────────────────────────────── */
+    .free-guides {
+      background: var(--vanilla-d);
+      padding:100px 44px;
+    }
+    .guides-grid {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:32px; max-width:var(--max-w); margin:0 auto;
+    }
+    .guide-card {
+      background: var(--white);
+      border:1px solid rgba(79,12,40,0.08);
+      overflow:hidden;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .guide-card:hover {
+      transform:translateY(-6px);
+      box-shadow:0 20px 60px rgba(79,12,40,0.1);
+    }
+    .gc-cover {
+      height:220px; padding:32px 28px;
+      display:flex; flex-direction:column;
+      justify-content:space-between; position:relative;
+    }
+    .gc-cover-1 { background:var(--plum); }
+    .gc-cover-2 { background:var(--spirulina); }
+    .gc-cover-top {
+      position:absolute; top:0; left:0; right:0; height:2px;
+      background:linear-gradient(90deg,var(--straw-mid),transparent);
+    }
+    .gc-cover-tag {
+      font-size:9px; font-weight:700;
+      letter-spacing:0.2em; text-transform:uppercase;
+      color:rgba(247,241,227,0.45);
+    }
+    .gc-cover-title {
+      font-family:var(--font-disp);
+      font-size:28px; font-weight:900;
+      color:var(--white); line-height:1.08;
+    }
+    .gc-cover-title em { font-style:italic; font-weight:300; color:var(--strawberry); }
+    .gc-cover-author {
+      font-family:var(--font-script);
+      font-size:22px; color:rgba(247,241,227,0.45);
+    }
+    .gc-body { padding:32px; }
+    .gc-free-badge {
+      display:inline-block;
+      background:var(--spir-light);
+      color:var(--spirulina);
+      font-size:9px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase;
+      padding:5px 12px; margin-bottom:16px;
+    }
+    .gc-desc {
+      font-family:var(--font-sub);
+      font-style:italic; font-size:16px; font-weight:300;
+      color:var(--ink-soft); line-height:1.85;
+      margin-bottom:20px;
+    }
+    .gc-list {
+      list-style:none;
+      display:flex; flex-direction:column; gap:9px;
+      margin-bottom:28px;
+    }
+    .gc-list li {
+      display:flex; gap:12px; align-items:flex-start;
+      font-size:13px; line-height:1.65;
+      color:var(--ink-soft); font-weight:300;
+    }
+    .gc-list li::before {
+      content:'—'; color:var(--plum); font-weight:700;
+      min-width:14px; margin-top:1px;
+    }
+    .btn-guide {
+      display:flex; align-items:center; justify-content:center;
+      gap:8px; width:100%;
+      background:transparent; color:var(--plum);
+      border:1.5px solid var(--plum);
+      padding:13px; font-family:var(--font-body);
+      font-size:10px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .btn-guide:hover { background:var(--plum); color:var(--vanilla); }
+    .btn-guide-spir {
+      border-color:var(--spirulina); color:var(--spirulina);
+    }
+    .btn-guide-spir:hover { background:var(--spirulina); color:var(--vanilla); }
+
+    /* ─── PRODUCT LADDER ──────────────────────────── */
+    .ladder {
+      background:var(--white);
+      padding:100px 44px;
+    }
+    .ladder-grid {
+      max-width:var(--max-w); margin:0 auto;
+      display:grid; grid-template-columns:repeat(5,1fr);
+      gap:2px; margin-top:60px;
+    }
+    .ladder-step { padding:32px 20px; position:relative; }
+    .ls-0 { background:var(--plum-light); border-top:3px solid var(--plum); }
+    .ls-1 { background:var(--spir-light); border-top:3px solid var(--spirulina); }
+    .ls-2 { background:var(--vanilla-d); border-top:3px solid var(--ink-muted); }
+    .ls-3 { background:var(--plum); color:var(--white); border-top:3px solid var(--strawberry); }
+    .ls-4 { background:var(--spirulina); color:var(--white); border-top:3px solid var(--straw-mid); }
+    .ls-tier {
+      font-size:9px; font-weight:700;
+      letter-spacing:0.2em; text-transform:uppercase;
+      margin-bottom:10px;
+    }
+    .ls-0 .ls-tier { color:var(--plum); }
+    .ls-1 .ls-tier { color:var(--spirulina); }
+    .ls-2 .ls-tier { color:var(--ink-muted); }
+    .ls-3 .ls-tier { color:var(--straw-mid); }
+    .ls-4 .ls-tier { color:var(--straw-mid); }
+    .ls-title {
+      font-family:var(--font-disp);
+      font-size:14px; font-weight:700;
+      line-height:1.3; margin-bottom:10px;
+    }
+    .ls-body {
+      font-size:11px; line-height:1.75;
+      font-weight:300; opacity:0.65; margin-bottom:14px;
+    }
+    .ls-price {
+      font-size:11px; font-weight:700; letter-spacing:0.08em;
+    }
+    .ls-0 .ls-price { color:var(--plum); }
+    .ls-1 .ls-price { color:var(--spirulina); }
+    .ls-2 .ls-price { color:var(--ink-soft); }
+    .ls-3 .ls-price,.ls-4 .ls-price { color:var(--straw-mid); }
+
+    /* ─── NEWSLETTER BAND ─────────────────────────── */
+    .newsletter {
+      background:var(--spirulina);
+      padding:88px 44px;
+    }
+    .nl-inner {
+      max-width:600px; margin:0 auto; text-align:center;
+    }
+    .nl-script {
+      font-family:var(--font-script);
+      font-size:clamp(52px,6vw,80px);
+      color:var(--straw-mid); line-height:0.9;
+      display:block; margin-bottom:8px;
+    }
+    .nl-hl {
+      font-family:var(--font-disp);
+      font-size:clamp(34px,4vw,54px);
+      font-weight:900; letter-spacing:-0.025em;
+      line-height:1.0; color:var(--white); margin-bottom:18px;
+    }
+    .nl-hl em { font-style:italic; font-weight:300; color:var(--straw-mid); }
+    .nl-sub {
+      font-family:var(--font-sub);
+      font-style:italic; font-size:17px; font-weight:300;
+      color:rgba(247,241,227,0.5); margin-bottom:38px; line-height:1.7;
+    }
+    .nl-form { display:flex; max-width:440px; margin:0 auto 14px; }
+    .nl-inp {
+      flex:1; background:rgba(247,241,227,0.07);
+      border:1px solid rgba(247,241,227,0.18); border-right:none;
+      color:var(--white); padding:15px 18px;
+      font-family:var(--font-body); font-size:13px; font-weight:300; outline:none;
+    }
+    .nl-inp::placeholder { color:rgba(247,241,227,0.3); }
+    .nl-btn {
+      background:var(--plum); color:var(--vanilla); border:none;
+      padding:15px 22px; font-family:var(--font-body);
+      font-size:10px; font-weight:700;
+      letter-spacing:0.18em; text-transform:uppercase;
+      cursor:pointer; transition:background 0.2s; white-space:nowrap;
+    }
+    .nl-btn:hover { background:var(--plum-mid); }
+    .nl-disc { font-size:10px; color:rgba(247,241,227,0.25); }
+
+    /* ─── ABOUT ───────────────────────────────────── */
+    .about {
+      background:var(--vanilla); padding:100px 44px;
+    }
+    .about-inner {
+      max-width:var(--max-w); margin:0 auto;
+      display:grid; grid-template-columns:0.85fr 1.15fr;
+      gap:80px; align-items:center;
+    }
+    .about-frame {
+      aspect-ratio:3/4; background:var(--vanilla-d);
+      position:relative; overflow:hidden;
+    }
+    .about-ph {
+      width:100%; height:100%;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .about-ph-letter {
+      font-family:var(--font-disp);
+      font-size:180px; font-weight:900;
+      color:rgba(79,12,40,0.07); letter-spacing:-0.06em;
+    }
+    .about-accent {
+      position:absolute; bottom:-2px; left:0; right:0;
+      height:4px;
+      background:linear-gradient(90deg, var(--plum), var(--straw-mid));
+    }
+    .about-card {
+      position:absolute; bottom:28px; right:-20px;
+      background:var(--plum); color:var(--white);
+      padding:20px 22px;
+      font-family:var(--font-sub);
+      font-style:italic; font-size:14px; font-weight:300;
+      line-height:1.5; max-width:185px;
+    }
+    .about-lbl {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.22em; text-transform:uppercase;
+      color:var(--plum); margin-bottom:16px;
+    }
+    .about-hl {
+      font-family:var(--font-disp);
+      font-size:clamp(30px,3.5vw,46px);
+      font-weight:900; letter-spacing:-0.025em;
+      line-height:1.1; color:var(--ink); margin-bottom:26px;
+    }
+    .about-hl em { font-style:italic; font-weight:300; }
+    .about-body {
+      font-family:var(--font-sub);
+      font-size:17px; font-weight:300; font-style:italic;
+      color:var(--ink-soft); line-height:1.95; margin-bottom:22px;
+    }
+    .about-beliefs {
+      display:flex; flex-direction:column; gap:12px;
+      margin-bottom:32px;
+    }
+    .ab-item {
+      display:flex; gap:14px; align-items:flex-start;
+      font-size:13px; line-height:1.7; color:var(--ink-soft); font-weight:300;
+    }
+    .ab-dot {
+      width:6px; height:6px; background:var(--plum);
+      border-radius:50%; flex-shrink:0; margin-top:7px;
+    }
+    .about-sig {
+      font-family:var(--font-script);
+      font-size:54px; color:var(--plum); margin-top:28px;
+    }
+    .about-prot {
+      font-family:var(--font-sub);
+      font-style:italic; font-size:12px;
+      color:var(--ink-muted); letter-spacing:0.08em; margin-top:5px;
+    }
+
+    /* ─── FOOTER ──────────────────────────────────── */
+    footer {
+      background:var(--ink);
+      padding:60px 44px 36px;
+      color:rgba(247,241,227,0.45);
+    }
+    .ft-inner {
+      max-width:var(--max-w); margin:0 auto;
+      display:grid; grid-template-columns:2fr 1fr 1fr;
+      gap:60px; margin-bottom:48px;
+    }
+    .ft-script {
+      font-family:var(--font-script);
+      font-size:36px; color:var(--straw-mid);
+    }
+    .ft-word {
+      font-size:10px; font-weight:600;
+      letter-spacing:0.2em; text-transform:uppercase;
+      color:rgba(247,241,227,0.28); margin-bottom:14px;
+    }
+    .ft-desc {
+      font-size:13px; font-weight:300;
+      line-height:1.85; max-width:260px;
+    }
+    .ft-sig {
+      font-family:var(--font-sub);
+      font-style:italic; font-size:12px;
+      color:rgba(247,241,227,0.22); margin-top:18px;
+    }
+    .ft-ct {
+      font-size:10px; font-weight:700;
+      letter-spacing:0.2em; text-transform:uppercase;
+      color:rgba(247,241,227,0.3); margin-bottom:18px;
+    }
+    .ft-links { list-style:none; display:flex; flex-direction:column; gap:10px; }
+    .ft-links a {
+      font-size:13px; font-weight:300;
+      color:rgba(247,241,227,0.5); transition:color 0.2s;
+    }
+    .ft-links a:hover { color:var(--white); }
+    .ft-bottom {
+      border-top:1px solid rgba(247,241,227,0.07);
+      padding-top:26px; display:flex;
+      justify-content:space-between; align-items:center;
+    }
+    .ft-copy { font-size:11px; letter-spacing:0.05em; }
+    .ft-prot {
+      font-family:var(--font-sub);
+      font-style:italic; font-size:12px;
+      color:rgba(247,241,227,0.22);
+    }
+
+    /* ─── TOAST ───────────────────────────────────── */
+    .toast {
+      display:none; background:var(--spirulina);
+      color:var(--white); padding:12px 18px;
+      font-size:12px; font-weight:500; letter-spacing:0.05em;
+      text-align:center; margin-top:10px;
+    }
+    .toast.show { display:block; }
+
+    /* ─── REVEAL ──────────────────────────────────── */
+    .reveal {
+      opacity:0; transform:translateY(24px);
+      transition:opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    /* ─── RESPONSIVE ──────────────────────────────── */
+    @media(max-width:960px){
+      nav { padding:0 20px; }
+      .nav-links { display:none; }
+      .hero { padding:100px 20px 70px; }
+      .hero-inner,.about-inner { grid-template-columns:1fr; gap:48px; }
+      .hero-bg-letter { display:none; }
+      .pillars-grid,.guides-grid { grid-template-columns:1fr; }
+      .ladder-grid { grid-template-columns:1fr 1fr; }
+      .ft-inner { grid-template-columns:1fr; gap:36px; }
+      .ft-bottom { flex-direction:column; gap:10px; text-align:center; }
+      .nl-form { flex-direction:column; }
+      .nl-inp { border-right:1px solid rgba(247,241,227,0.18); }
+      .about-card { display:none; }
+      .hero-ctas { flex-direction:column; }
+      .hc-form { flex-direction:column; }
+      .hc-input { border-right:1px solid rgba(247,241,227,0.2); }
+      .tension-band,.pillars,.free-guides,.ladder,.newsletter,.about { padding:70px 20px; }
+      footer { padding:48px 20px 28px; }
+    }
+    @media(max-width:560px){
+      .ladder-grid { grid-template-columns:1fr; }
+      .hero-stats { gap:20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ NAV ═══════════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-brand">
+      <span class="nav-script">Nams</span>
+      <span class="nav-wordmark">The Nams Lifestyle</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#free-guides">Free Guides</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('hero-capture').scrollIntoView({behavior:'smooth'})">
+      Get Free Guides
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg-letter">N</div>
+    <div class="hero-inner">
+
+      <!-- Left -->
+      <div>
+        <div class="hero-eyebrow">
+          <div class="eyebrow-dash"></div>
+          <span class="eyebrow-text">For Women 40+ Ready to Eat Smart &amp; Age Powerfully</span>
+        </div>
+        <h1 class="hero-hl">
+          The wrong<br />
+          <span class="hero-script-line">variable</span>
+          is costing<br />you <em>everything.</em>
+        </h1>
+        <p class="hero-sub">It's not willpower. It's not motivation. It's protein.</p>
+        <p class="hero-body">
+          Most women over 40 aren't eating too much. They're eating too little protein.
+          That single gap is driving the muscle loss, the metabolic slowdown, and the
+          fatigue you're trying to fix. The mechanism is different now. The inputs need to be too.
+        </p>
+        <div class="hero-ctas">
+          <a href="/protein-first-protocol" class="btn-solid">Get the Free Protocol →</a>
+          <a href="#shop" class="btn-outline">Browse the Library</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-n">30g</div>
+            <div class="stat-l">Protein per meal</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">40+</div>
+            <div class="stat-l">Different system</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">5</div>
+            <div class="stat-l">Resources to start</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — guide previews + mini capture -->
+      <div class="hero-guides">
+        <a href="/protein-first-protocol" class="hero-guide-card">
+          <div class="guide-thumb gt-plum">
+            <div class="guide-thumb-tag">Free</div>
+            <div class="guide-thumb-title">Protein-<em>First</em> Protocol</div>
+          </div>
+          <div>
+            <div class="guide-card-label">Free Guide 01</div>
+            <div class="guide-card-title">The Protein-First Protocol</div>
+            <div class="guide-card-desc">The mechanism, the targets, and the system — built for women over 40.</div>
+            <div class="guide-free-tag">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="1,6 4.5,9.5 11,2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              Free — Instant Access
+            </div>
+          </div>
+        </a>
+        <a href="/protein-first-grocery-list" class="hero-guide-card">
+          <div class="guide-thumb gt-spir">
+            <div class="guide-thumb-tag">Free</div>
+            <div class="guide-thumb-title">Ultimate Grocery <em>List</em></div>
+          </div>
+          <div>
+            <div class="guide-card-label">Free Guide 02</div>
+            <div class="guide-card-title">The Ultimate Protein-First Grocery List</div>
+            <div class="guide-card-desc">Every protein source ranked, categorised, and hormone-compatible.</div>
+            <div class="guide-free-tag">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="1,6 4.5,9.5 11,2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              Free — Instant Access
+            </div>
+          </div>
+        </a>
+        <div class="hero-capture" id="hero-capture">
+          <div class="hc-label">Get Both Free Guides Now</div>
+          <div class="hc-title">Start the Protein-First Protocol</div>
+          <form onsubmit="handleSubmit(event,'hero-toast')">
+            <div class="hc-form">
+              <input class="hc-input" type="email" name="email" placeholder="Your email address" required />
+              <button type="submit" class="hc-btn">Send →</button>
+            </div>
+            <div class="toast" id="hero-toast">✓ Both guides are on their way.</div>
+          </form>
+          <p class="hc-disc">No spam. Just the protocol and the next useful step.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ TENSION BAND ═══════════════════════════════ -->
+  <section class="tension-band reveal">
+    <div class="tb-inner">
+      <div class="tb-eyebrow">The Problem Nobody's Naming</div>
+      <h2 class="tb-hl">
+        You've been told to eat <em>less</em> and move <em>more.</em><br />
+        That advice was never built for <span class="script-accent">your</span> body.
+      </h2>
+      <p class="tb-body">
+        After 40, estrogen shifts. Anabolic response blunts. Cortisol patterns change.
+        Your body is on a different operating system — and generic nutrition advice
+        was never written for this version of you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ THREE PILLARS ══════════════════════════════ -->
+  <section class="pillars">
+    <div class="section-header reveal">
+      <div class="sec-lbl">The TNL Framework</div>
+      <h2 class="sec-hl">Three pillars.<br /><em>One complete system.</em></h2>
+      <p class="sec-sub">Authority, practicality, and identity — the ecosystem that makes it stick.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar pl-ink reveal">
+        <div class="pl-bg-n">01</div>
+        <div class="pl-tag">Pillar One — The Why</div>
+        <h3 class="pl-title">Longevity &amp; Biohacks</h3>
+        <p class="pl-body">The science, mechanisms, and body systems behind what changes at 40+. Cortisol, mTOR, anabolic resistance — explained at the level you deserve.</p>
+        <div class="pl-quote">"She knows more than my doctor told me."</div>
+      </div>
+      <div class="pillar pl-van reveal">
+        <div class="pl-bg-n">02</div>
+        <div class="pl-tag">Pillar Two — The What</div>
+        <h3 class="pl-title">Nutrition &amp; Protein-First</h3>
+        <p class="pl-body">The Protein-First Protocol in practice. What 30g looks like at every meal. High-protein grocery lists. 15-minute meals. The system that works in real life.</p>
+        <div class="pl-quote">"I can actually do this."</div>
+      </div>
+      <div class="pillar pl-plum reveal">
+        <div class="pl-bg-n">03</div>
+        <div class="pl-tag">Pillar Three — The Who</div>
+        <h3 class="pl-title">Discipline &amp; Strength</h3>
+        <p class="pl-body">Muscle is not optional after 40 — it is a longevity organ. Identity-based habits over outcome-based goals. Systems over motivation. Always.</p>
+        <div class="pl-quote">"This is who I want to become."</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FREE GUIDES ════════════════════════════════ -->
+  <section class="free-guides" id="free-guides">
+    <div class="section-header reveal">
+      <div class="sec-lbl">Free — Instant Access</div>
+      <h2 class="sec-hl">Two free guides.<br /><em>Start here.</em></h2>
+      <p class="sec-sub">No credit card. No guesswork. Everything you need to close the protein gap this week.</p>
+    </div>
+    <div class="guides-grid">
+
+      <div class="guide-card reveal">
+        <div class="gc-cover gc-cover-1">
+          <div class="gc-cover-top"></div>
+          <div class="gc-cover-tag">Free Guide 01 — The Nams Lifestyle</div>
+          <div class="gc-cover-title">The Protein-<br /><em>First</em> Protocol</div>
+          <div class="gc-cover-author">by Nams</div>
+        </div>
+        <div class="gc-body">
+          <div class="gc-free-badge">Free Download</div>
+          <p class="gc-desc">The mechanism behind why protein is the missing variable at 40+ — and the exact system to fix it, starting this week.</p>
+          <ul class="gc-list">
+            <li>Protein targets calibrated for post-40 anabolic resistance</li>
+            <li>What 30g looks like at every meal — real food examples</li>
+            <li>Why eating less stops working after 40 — mTOR explained</li>
+            <li>The 3-day protein audit to find your exact deficit</li>
+            <li>Meal timing built around circadian cortisol patterns</li>
+          </ul>
+          <a href="/protein-first-protocol">
+            <button class="btn-guide">Get This Free →</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="guide-card reveal">
+        <div class="gc-cover gc-cover-2">
+          <div class="gc-cover-top"></div>
+          <div class="gc-cover-tag">Free Guide 02 — The Nams Lifestyle</div>
+          <div class="gc-cover-title">The Ultimate<br /><em>Protein-First</em> Grocery List</div>
+          <div class="gc-cover-author">by Nams</div>
+        </div>
+        <div class="gc-body">
+          <div class="gc-free-badge" style="background:var(--spir-light);color:var(--spirulina);">Free Download</div>
+          <p class="gc-desc">Every protein source ranked by density, hormone-compatibility, and real-life accessibility. The only grocery list built for women over 40.</p>
+          <ul class="gc-list">
+            <li>Top protein sources by category — animal, plant, and hybrid</li>
+            <li>Protein density rankings so you know what's worth buying</li>
+            <li>Hormone-compatible foods for 40+ biology</li>
+            <li>Quick-grab snack proteins hitting 10–15g without effort</li>
+            <li>What to stop buying — the low-protein traps in your shop</li>
+          </ul>
+          <a href="/protein-first-grocery-list">
+            <button class="btn-guide btn-guide-spir">Get This Free →</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ PRODUCT LADDER ═════════════════════════════ -->
+  <section class="ladder" id="shop">
+    <div class="section-header reveal">
+      <div class="sec-lbl">The Product Library</div>
+      <h2 class="sec-hl">Start free.<br /><em>Keep the path clear.</em></h2>
+      <p class="sec-sub">Five resources. A complete progression from protocol to practice to permanence.</p>
+    </div>
+    <div class="ladder-grid">
+      <div class="ladder-step ls-0 reveal">
+        <div class="ls-tier">Free — 01</div>
+        <div class="ls-title">The Protein-First Protocol</div>
+        <p class="ls-body">The mechanism, the targets, and the system. Start here.</p>
+        <div class="ls-price">Free</div>
+      </div>
+      <div class="ladder-step ls-1 reveal">
+        <div class="ls-tier">Free — 02</div>
+        <div class="ls-title">The Ultimate Protein-First Grocery List</div>
+        <p class="ls-body">Every protein source ranked. Built for real life.</p>
+        <div class="ls-price">Free</div>
+      </div>
+      <div class="ladder-step ls-2 reveal">
+        <div class="ls-tier">Paid — $27</div>
+        <div class="ls-title">The Protein-First Reset</div>
+        <p class="ls-body">7-day recalibration for women who've stalled. Fix the foundation.</p>
+        <div class="ls-price">$27 Ebook</div>
+      </div>
+      <div class="ladder-step ls-3 reveal">
+        <div class="ls-tier">Paid — $47</div>
+        <div class="ls-title">The Protein-First Blueprint</div>
+        <p class="ls-body">Nutrition, strength, sleep, hormones. The complete system.</p>
+        <div class="ls-price">$47 Ebook</div>
+      </div>
+      <div class="ladder-step ls-4 reveal">
+        <div class="ls-tier">Paid — $37</div>
+        <div class="ls-title">21 Days of Protein-First Recipes + Snacks</div>
+        <p class="ls-body">21 meals and 20 snacks — 30g+ per serving. Real food.</p>
+        <div class="ls-price">$37 Ebook</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NEWSLETTER ═════════════════════════════════ -->
+  <section class="newsletter" id="newsletter">
+    <div class="nl-inner reveal">
+      <span class="nl-script">The boring work</span>
+      <h2 class="nl-hl"><em>compounds.</em></h2>
+      <p class="nl-sub">Mechanisms, protocols, and the specific inputs that move the needle for women over 40. Science, translated. Every week.</p>
+      <div class="nl-form">
+        <input class="nl-inp" type="email" id="nl-email" placeholder="Your email address" />
+        <button class="nl-btn" onclick="handleNewsletter()">Join →</button>
+      </div>
+      <p class="nl-disc">Join the list. Unsubscribe any time.</p>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="reveal" style="position:relative;">
+        <div class="about-frame">
+          <!-- REPLACE with: <img src="/nams.jpg" alt="Nams" style="width:100%;height:100%;object-fit:cover;object-position:top;" /> -->
+          <div class="about-ph">
+            <span class="about-ph-letter">N</span>
+          </div>
+          <div class="about-accent"></div>
+        </div>
+        <div class="about-card">"Aging well is a skill — and like all skills, it rewards precision."</div>
+      </div>
+      <div class="reveal">
+        <div class="about-lbl">About Nams</div>
+        <h2 class="about-hl">Holistic nutrition<br />meets <em>real life.</em></h2>
+        <p class="about-body">I help women over 40 build muscle, protect their metabolism, and age with strength and clarity through the Protein-First Protocol — a science-backed, systems-based approach built for the 40+ operating system.</p>
+        <div class="about-beliefs">
+          <div class="ab-item"><div class="ab-dot"></div><span>Protein is the missing variable — not willpower, not restriction</span></div>
+          <div class="ab-item"><div class="ab-dot"></div><span>Muscle is a longevity organ — you lift to stay alive better and longer</span></div>
+          <div class="ab-item"><div class="ab-dot"></div><span>Systems beat motivation — every time, especially after 40</span></div>
+          <div class="ab-item"><div class="ab-dot"></div><span>Your body is not broken — it's on a different operating system</span></div>
+        </div>
+        <div class="about-sig">Nams.</div>
+        <p class="about-prot">The Protein-First Protocol.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═════════════════════════════════════ -->
+  <footer>
+    <div class="ft-inner">
+      <div>
+        <div class="ft-script">Nams</div>
+        <div class="ft-word">The Nams Lifestyle</div>
+        <p class="ft-desc">Premium wellness for women 40+. Protein-first nutrition, longevity science, and discipline systems built for your biology.</p>
+        <div class="ft-sig">Protein first. Everything else follows.</div>
+      </div>
+      <div>
+        <div class="ft-ct">Resources</div>
+        <ul class="ft-links">
+          <li><a href="/protein-first-protocol">Free Protocol Guide</a></li>
+          <li><a href="/protein-first-grocery-list">Free Grocery List</a></li>
+          <li><a href="#shop">The Reset — $27</a></li>
+          <li><a href="#shop">The Blueprint — $47</a></li>
+          <li><a href="#shop">21 Days of Recipes — $37</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Connect</div>
+        <ul class="ft-links">
+          <li><a href="https://instagram.com/thenamslifestyle" target="_blank">@thenamslifestyle</a></li>
+          <li><a href="#newsletter">Weekly Newsletter</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="mailto:hello@thenamslifestyle.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">© 2025 The Nams Lifestyle. All rights reserved.</span>
+      <span class="ft-prot">Nams. The Protein-First Protocol.</span>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e, toastId) {
+      e.preventDefault();
+      const email = e.target.querySelector('[name="email"]').value;
+      // TODO: POST to Kit API or redirect to /thank-you
+      // window.location.href = '/thank-you?source=hero';
+      document.getElementById(toastId).classList.add('show');
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓'; btn.style.background = 'var(--guacamole)';
+      console.log('Sub:', email);
+    }
+    function handleNewsletter() {
+      const email = document.getElementById('nl-email').value;
+      if (!email || !email.includes('@')) return;
+      const btn = document.querySelector('.nl-btn');
+      btn.textContent = "✓ You're in";
+      btn.style.background = 'var(--plum-mid)';
+    }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    window.addEventListener('scroll', () => {
+      document.getElementById('main-nav').style.boxShadow =
+        window.scrollY > 40 ? '0 2px 20px rgba(79,12,40,0.08)' : 'none';
+    });
+  </script>
+
+</body>
+</html>
