@@ -3,6 +3,7 @@
   "routes": [
     { "src": "/", "dest": "/index.html" },
     { "src": "/start-here", "dest": "/start-here.html" },
+    { "src": "/work-with-me", "dest": "/work-with-me.html" },
     { "src": "/protein-first-protocol", "dest": "/protein-first-protocol.html" },
     { "src": "/protein-first-grocery-list", "dest": "/protein-first-grocery-list.html" },
     { "src": "/protein-first-reset", "dest": "/protein-first-reset.html" },
