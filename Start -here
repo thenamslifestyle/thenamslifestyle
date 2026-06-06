@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start Here — The Nams Lifestyle</title>
+  <meta name="description" content="Start your protein-first journey. Get the free protocol or jump straight into the 7-day Reset." />
+  <meta name="theme-color" content="#f7f1e3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vanilla: #f7f1e3; --vanilla-d: #ede4ce;
+      --plum: #4f0c28; --plum-mid: #6b1035; --plum-light: #f9eef2;
+      --strawberry: #f9cdd5; --straw-mid: #f0a8b4;
+      --spirulina: #183b23; --guacamole: #4a6741;
+      --ink: #1a1a1f; --ink-soft: #3d3d44; --ink-muted: #7a7a85;
+      --espresso: #3B2314; --white: #ffffff;
+      --font-disp: 'Noto Serif Display', Georgia, serif;
+      --font-sub: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Montserrat', sans-serif;
+      --font-script: 'Pinyon Script', cursive;
+      --max-w: 1100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--vanilla); color: var(--ink); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(247,241,227,0.96); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(79,12,40,0.1);
+      padding: 0 48px; height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-wordmark {
+      font-family: var(--font-body); font-size: 11px; font-weight: 700;
+      letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink);
+    }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--plum); }
+    .nav-cta {
+      background: var(--espresso); color: var(--strawberry);
+      padding: 12px 26px; font-family: var(--font-body);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+      border: none; cursor: pointer; transition: background 0.2s; display: inline-block;
+    }
+    .nav-cta:hover { background: #2a1a0f; }
+
+    /* ICP */
+    .icp-section { background: var(--ink); padding: 120px 48px 80px; }
+    .icp-inner { max-width: var(--max-w); margin: 0 auto; }
+    .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--strawberry); margin-bottom: 16px; display: block; }
+    .icp-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(44px, 5.5vw, 80px);
+      font-weight: 900; letter-spacing: -0.025em; line-height: 1.0;
+      color: var(--white); margin-bottom: 56px;
+    }
+    .icp-hl em { font-style: italic; font-weight: 300; color: var(--strawberry); }
+    .icp-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: rgba(255,255,255,0.08);
+    }
+    .icp-box {
+      background: var(--ink); border: 1px solid rgba(255,255,255,0.1);
+      padding: 44px 36px; transition: border-color 0.3s;
+    }
+    .icp-box:hover { border-color: rgba(249,205,213,0.4); }
+    .icp-num {
+      font-family: var(--font-body); font-size: 11px; font-weight: 700;
+      letter-spacing: 0.2em; color: var(--strawberry); opacity: 0.55;
+      display: block; margin-bottom: 18px;
+    }
+    .icp-p {
+      font-family: var(--font-sub); font-style: italic;
+      font-size: 22px; color: rgba(255,255,255,0.82); line-height: 1.65;
+    }
+
+    /* IMAGE PLACEHOLDER */
+    .img-band { background: var(--vanilla-d); padding: 72px 48px; }
+    .img-ph {
+      max-width: var(--max-w); margin: 0 auto;
+      height: 420px; background: var(--vanilla);
+      border: 1px dashed rgba(79,12,40,0.2);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    }
+    .img-ph-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-muted); opacity: 0.5; }
+    .img-ph-note { font-family: var(--font-sub); font-style: italic; font-size: 16px; color: var(--ink-muted); opacity: 0.4; }
+
+    /* START HERE CARDS */
+    .start-section { background: var(--ink); padding: 100px 48px; }
+    .start-inner { max-width: var(--max-w); margin: 0 auto; }
+    .start-label { font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--strawberry); margin-bottom: 16px; display: block; }
+    .start-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(32px, 4vw, 58px); font-weight: 900; letter-spacing: -0.025em;
+      color: var(--white); line-height: 1.05; margin-bottom: 12px;
+    }
+    .start-hl em { font-style: italic; font-weight: 300; }
+    .start-sub {
+      font-family: var(--font-sub); font-style: italic;
+      font-size: clamp(17px, 1.8vw, 21px); color: rgba(247,241,227,0.45);
+      margin-bottom: 60px; line-height: 1.7; max-width: 600px;
+    }
+    .start-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+
+    /* Card — Espresso (free) */
+    .card-free {
+      background: var(--espresso); padding: 52px 44px 48px;
+      position: relative; overflow: hidden;
+    }
+    .card-free::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--strawberry);
+    }
+    .card-tag {
+      font-size: 9px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      margin-bottom: 20px; display: block;
+    }
+    .card-free .card-tag { color: var(--strawberry); opacity: 0.7; }
+    .card-paid .card-tag { color: var(--ink-muted); }
+    .card-title {
+      font-family: var(--font-disp);
+      font-size: clamp(28px, 3vw, 44px); font-weight: 700;
+      line-height: 1.1; margin-bottom: 18px;
+    }
+    .card-free .card-title { color: var(--strawberry); }
+    .card-paid .card-title { color: var(--ink); }
+    .card-body {
+      font-size: 15px; font-weight: 300; line-height: 1.85; margin-bottom: 20px;
+    }
+    .card-free .card-body { color: rgba(249,205,213,0.55); }
+    .card-paid .card-body { color: var(--ink-muted); }
+    .card-bullets { list-style: none; margin-bottom: 36px; display: flex; flex-direction: column; gap: 10px; }
+    .card-bullets li { display: flex; gap: 12px; align-items: flex-start; font-size: 13px; line-height: 1.65; font-weight: 300; }
+    .card-free .card-bullets li { color: rgba(249,205,213,0.55); }
+    .card-paid .card-bullets li { color: var(--ink-soft); }
+    .card-bullets li::before { content: ''; width: 5px; height: 1px; margin-top: 10px; flex-shrink: 0; display: block; }
+    .card-free .card-bullets li::before { background: var(--strawberry); }
+    .card-paid .card-bullets li::before { background: var(--guacamole); }
+    .card-btn {
+      display: inline-block; font-family: var(--font-body);
+      font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 15px 30px; border: 1.5px solid; cursor: pointer; transition: all 0.2s;
+    }
+    .card-free .card-btn { color: var(--strawberry); border-color: var(--strawberry); background: transparent; }
+    .card-free .card-btn:hover { background: var(--strawberry); color: var(--espresso); }
+    .card-paid .card-btn { color: var(--white); border-color: var(--ink); background: var(--ink); }
+    .card-paid .card-btn:hover { background: var(--plum); border-color: var(--plum); }
+    .card-price {
+      font-family: var(--font-disp); font-size: 15px; font-weight: 700;
+      margin-bottom: 16px; display: block;
+    }
+    .card-paid .card-price { color: var(--spirulina); }
+
+    /* Card — White (paid) */
+    .card-paid {
+      background: var(--white); padding: 52px 44px 48px;
+      border: 1px solid rgba(79,12,40,0.08);
+    }
+
+    /* FOOTER */
+    footer { background: var(--ink); padding: 60px 48px 36px; }
+    .ft-inner { max-width: var(--max-w); margin: 0 auto; }
+    .ft-top { padding-bottom: 36px; margin-bottom: 28px; border-bottom: 1px solid rgba(247,241,227,0.08); }
+    .ft-wordmark { font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--white); margin-bottom: 12px; }
+    .ft-desc { font-size: 16px; font-weight: 400; color: var(--vanilla); line-height: 1.85; max-width: 500px; }
+    .ft-nav { display: flex; gap: 36px; flex-wrap: wrap; list-style: none; margin-top: 32px; }
+    .ft-nav a { font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: var(--white); transition: opacity 0.2s; }
+    .ft-nav a:hover { opacity: 0.7; }
+    .ft-bottom { display: flex; justify-content: space-between; align-items: center; }
+    .ft-copy { font-size: 13px; color: var(--white); letter-spacing: 0.06em; }
+    .ft-prot { font-family: var(--font-sub); font-style: italic; font-size: 18px; color: var(--vanilla); font-weight: 300; }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .icp-section, .img-band, .start-section, footer { padding-left: 24px; padding-right: 24px; }
+      .icp-grid { grid-template-columns: 1fr; }
+      .start-grid { grid-template-columns: 1fr; }
+      .ft-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-wordmark" style="text-decoration:none;color:inherit;">The Nams Lifestyle</a>
+  <ul class="nav-links">
+    <li><a href="/#lab">Free Guides</a></li>
+    <li><a href="/#lab">Longevity Lab</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#newsletter">Contact</a></li>
+    <li><a href="/work-with-me">Work With Me</a></li>
+  </ul>
+  <a href="/start-here" class="nav-cta">Start Here &rarr;</a>
+</nav>
+
+<!-- ICP -->
+<section class="icp-section">
+  <div class="icp-inner">
+    <span class="section-label">This is for you if</span>
+    <h1 class="icp-hl">You already know something<br /><em>has shifted.</em></h1>
+    <div class="icp-grid">
+      <div class="icp-box">
+        <span class="icp-num">01</span>
+        <p class="icp-p">You are eating well, training consistently, and your body is not responding the way it used to.</p>
+      </div>
+      <div class="icp-box">
+        <span class="icp-num">02</span>
+        <p class="icp-p">You know something has shifted after 40 but nobody has explained the actual mechanism.</p>
+      </div>
+      <div class="icp-box">
+        <span class="icp-num">03</span>
+        <p class="icp-p">You are done with generic advice that was never built for your biology.</p>
+      </div>
+      <div class="icp-box">
+        <span class="icp-num">04</span>
+        <p class="icp-p">You want to understand the science, not just follow another plan.</p>
+      </div>
+      <div class="icp-box">
+        <span class="icp-num">05</span>
+        <p class="icp-p">You are ready to build real muscle and protect your metabolism for the long term.</p>
+      </div>
+      <div class="icp-box">
+        <span class="icp-num">06</span>
+        <p class="icp-p">You want a system that works in real life, not a 30-day reset with an expiry date.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE PLACEHOLDER -->
+<div class="img-band">
+  <div class="img-ph">
+    <span class="img-ph-label">Image Placeholder</span>
+    <span class="img-ph-note">Replace with founder or lifestyle photo. Recommended: 1200 x 420px</span>
+  </div>
+</div>
+
+<!-- START HERE CARDS -->
+<section class="start-section">
+  <div class="start-inner">
+    <span class="start-label">Where would you like to start?</span>
+    <h2 class="start-hl">Your body has changed.<br /><em>The inputs need to as well.</em></h2>
+    <p class="start-sub">Start with the free guide to understand the mechanism, or jump straight into the Reset if you are ready to act now.</p>
+    <div class="start-grid">
+
+      <!-- Free card -->
+      <div class="card-free">
+        <span class="card-tag">Free &mdash; Start Here</span>
+        <h3 class="card-title">The Protein-First Protocol</h3>
+        <p class="card-body">Understand the science. Get your targets. Start this week. Free, always.</p>
+        <ul class="card-bullets">
+          <li>Why mTOR signalling changes after 40 and what to do with that</li>
+          <li>Exact protein targets calibrated for post-40 anabolic resistance</li>
+          <li>What 30g looks like at every meal with real food examples</li>
+          <li>The 3-day audit to find your exact protein deficit</li>
+          <li>Meal timing built around circadian cortisol patterns</li>
+        </ul>
+        <a href="/protein-first-protocol" class="card-btn">Get the Free Guide</a>
+      </div>
+
+      <!-- Paid card -->
+      <div class="card-paid">
+        <span class="card-tag">$7 &mdash; Ready to Act</span>
+        <span class="card-price">$7</span>
+        <h3 class="card-title">The Protein-First Reset</h3>
+        <p class="card-body">7-day structured recalibration. Fix the foundation. Start seeing results.</p>
+        <ul class="card-bullets">
+          <li>7-day structured meal framework with protein targets</li>
+          <li>Protein-first decision rules for every meal</li>
+          <li>How to recalibrate when your body has stopped responding</li>
+          <li>The stall audit to identify exactly what changed</li>
+        </ul>
+        <a href="/protein-first-reset" class="card-btn">Start the Reset</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-wordmark">The Nams Lifestyle</div>
+      <p class="ft-desc">Premium wellness for women 40+. Protein-first nutrition, longevity science, and discipline systems built for your biology.</p>
+      <ul class="ft-nav">
+        <li><a href="/#lab">Free Guides</a></li>
+        <li><a href="/#lab">Longevity Lab</a></li>
+        <li><a href="/start-here">Start Here</a></li>
+        <li><a href="/work-with-me">Work With Me</a></li>
+        <li><a href="https://www.instagram.com/thenamslifestyle" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="/#newsletter">Newsletter</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms">Terms</a></li>
+      </ul>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">2026 The Nams Lifestyle. All rights reserved.</span>
+      <span class="ft-prot">Protein first. Everything else follows.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
