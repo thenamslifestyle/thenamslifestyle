@@ -1,4 +1,125 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Nams Lifestyle, Protein-First Wellness for Women 40+</title>
+  <meta name="description" content="Science-backed protein-first nutrition and longevity systems for women 40+. Real mechanisms. Real results." />
+  <meta name="theme-color" content="#f7f1e3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vanilla:    #f7f1e3;
+      --vanilla-d:  #ede4ce;
+      --plum:       #4f0c28;
+      --plum-mid:   #6b1035;
+      --plum-light: #f9eef2;
+      --strawberry: #f9cdd5;
+      --straw-mid:  #f0a8b4;
+      --spirulina:  #183b23;
+      --spir-light: #e8f0ea;
+      --guacamole:  #4a6741;
+      --ink:        #1a1a1f;
+      --ink-soft:   #3d3d44;
+      --ink-muted:  #7a7a85;
+      --white:      #ffffff;
+      --espresso:   #3B2314;
+      --font-disp:  'Noto Serif Display', Georgia, serif;
+      --font-sub:   'Cormorant Garamond', Georgia, serif;
+      --font-body:  'Montserrat', sans-serif;
+      --font-script:'Pinyon Script', cursive;
+      --max-w:      1100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--vanilla);
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.3s; }
+    .reveal-delay-3 { transition-delay: 0.45s; }
+    .reveal-delay-4 { transition-delay: 0.6s; }
+    .anchor-band {
+      background: var(--white);
+      padding: 72px 48px;
+      border-top: 1px solid rgba(26,26,31,0.08);
+      border-bottom: 1px solid rgba(26,26,31,0.08);
+    }
+    .anchor-inner {
+      max-width: var(--max-w); margin: 0 auto;
+    }
+    .anchor-body {
+      font-family: var(--font-body);
+      font-size: clamp(16px, 1.6vw, 20px);
+      font-weight: 400; color: var(--ink);
+      line-height: 1.85; margin-top: 20px;
+      max-width: 820px;
+    }
+    .anchor-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--ink-muted);
+      margin-bottom: 20px; display: block;
+    }
+    .anchor-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(28px, 3.5vw, 48px);
+      font-weight: 900; letter-spacing: -0.025em;
+      color: var(--ink); line-height: 1.1; margin-bottom: 0;
+    }
+    .anchor-hl em { font-style: italic; font-weight: 300; }
+    .icp-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: rgba(255,255,255,0.08);
+    }
+    .icp-box {
+      background: var(--ink); border: 1px solid rgba(255,255,255,0.1);
+      padding: 36px 32px; transition: border-color 0.3s;
+    }
+    .icp-box:hover { border-color: rgba(249,205,213,0.4); }
+    .icp-num {
+      font-family: var(--font-body); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.2em; color: var(--strawberry); opacity: 0.55;
+      display: block; margin-bottom: 16px;
+    }
+    .icp-p {
+      font-family: var(--font-sub); font-style: italic;
+      font-size: 19px; color: rgba(255,255,255,0.82); line-height: 1.65;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(247,241,227,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(79,12,40,0.1);
+      padding: 0 48px; height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 24px rgba(79,12,40,0.08); }
+    .nav-wordmark {
+      font-family: var(--font-body);
       font-size: 11px; font-weight: 700;
       letter-spacing: 0.28em; text-transform: uppercase;
       color: var(--ink);
@@ -6,7 +127,7 @@
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a {
       font-size: 11px; font-weight: 500;
-      letter-spacing: 0.16em; text-transform: ;
+      letter-spacing: 0.16em; text-transform: uppercase;
       color: var(--ink-soft); transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--plum); }
@@ -327,7 +448,7 @@
     .lab-hook em { font-style: italic; font-weight: 300; color: var(--plum); }
     .prod-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 2px; }
     .prod-col { padding: 36px 24px; }
-    .pc-straw { background: var(--strawberry); }
+    .pc-straw { background: var(--espresso); }
     .pc-guac  { background: var(--guacamole); color: var(--white); }
     .pc-black { background: var(--ink); color: var(--white); }
     .pc-white { background: var(--white); border: 1px solid rgba(79,12,40,0.1); }
@@ -338,22 +459,22 @@
       letter-spacing: 0.2em; text-transform: uppercase;
       margin-bottom: 14px; opacity: 0.65;
     }
-    .pc-straw .prod-step { color: var(--plum); }
+    .pc-straw .prod-step { color: var(--strawberry); opacity: 0.7; }
     .pc-white .prod-step { color: var(--ink-muted); }
     .prod-title {
       font-family: var(--font-disp);
       font-size: 18px; font-weight: 700;
       line-height: 1.25; margin-bottom: 12px;
     }
-    .pc-straw .prod-title { color: var(--plum); }
+    .pc-straw .prod-title { color: var(--strawberry); }
     .pc-black .prod-title { color: var(--strawberry); }
     .pc-white .prod-title { color: var(--ink); }
     .prod-body { font-size: 14px; font-weight: 400; line-height: 1.75; margin-bottom: 18px; }
-    .pc-straw .prod-body { color: var(--plum); }
+    .pc-straw .prod-body { color: rgba(249,205,213,0.65); }
     .pc-black .prod-body { color: var(--vanilla); }
     .pc-white .prod-body { color: var(--ink-muted); }
     .prod-price { font-family: var(--font-disp); font-size: 20px; font-weight: 700; }
-    .pc-straw .prod-price { color: var(--plum); }
+    .pc-straw .prod-price { color: var(--strawberry); }
     .pc-black .prod-price { color: var(--strawberry); }
     .pc-white .prod-price { color: var(--ink); }
     .pc-guac .prod-price, .pc-spir .prod-price, .pc-plum .prod-price { color: var(--strawberry); }
@@ -457,7 +578,55 @@
     .ft-copy { font-size: 13px; color: var(--white); letter-spacing: 0.06em; }
     .ft-prot { font-family: var(--font-sub); font-style: italic; font-size: 18px; color: var(--vanilla); font-weight: 300; }
     @media (max-width: 1020px) {
-      nav { padding: 0 24px; }
+      .icp-grid { grid-template-columns: 1fr; }
+      .anchor-band { padding: 56px 24px; }
+      .anchor-band {
+      background: var(--white);
+      padding: 72px 48px;
+      border-top: 1px solid rgba(26,26,31,0.08);
+      border-bottom: 1px solid rgba(26,26,31,0.08);
+    }
+    .anchor-inner {
+      max-width: var(--max-w); margin: 0 auto;
+    }
+    .anchor-body {
+      font-family: var(--font-body);
+      font-size: clamp(16px, 1.6vw, 20px);
+      font-weight: 400; color: var(--ink);
+      line-height: 1.85; margin-top: 20px;
+      max-width: 820px;
+    }
+    .anchor-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--ink-muted);
+      margin-bottom: 20px; display: block;
+    }
+    .anchor-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(28px, 3.5vw, 48px);
+      font-weight: 900; letter-spacing: -0.025em;
+      color: var(--ink); line-height: 1.1; margin-bottom: 0;
+    }
+    .anchor-hl em { font-style: italic; font-weight: 300; }
+    .icp-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: rgba(255,255,255,0.08);
+    }
+    .icp-box {
+      background: var(--ink); border: 1px solid rgba(255,255,255,0.1);
+      padding: 36px 32px; transition: border-color 0.3s;
+    }
+    .icp-box:hover { border-color: rgba(249,205,213,0.4); }
+    .icp-num {
+      font-family: var(--font-body); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.2em; color: var(--strawberry); opacity: 0.55;
+      display: block; margin-bottom: 16px;
+    }
+    .icp-p {
+      font-family: var(--font-sub); font-style: italic;
+      font-size: 19px; color: rgba(255,255,255,0.82); line-height: 1.65;
+    }
+    nav { padding: 0 24px; }
       .nav-links { display: none; }
       .hero { padding: 100px 24px 70px; }
       .hero-inner, .wp-grid, .about-inner { grid-template-columns: 1fr; gap: 48px; }
@@ -480,14 +649,15 @@
 </head>
 <body>
   <nav id="main-nav">
-    <div class="nav-wordmark">The Nams Lifestyle</div>
+    <a href="/" class="nav-wordmark" style="text-decoration:none;color:inherit;">The Nams Lifestyle</a>
     <ul class="nav-links">
-      <li><a href="#free-guides">Start Here</a></li>
-      <li><a href="#lab">Resources</a></li>
+      <li><a href="#lab">Free Guides</a></li>
+      <li><a href="#lab">Longevity Lab</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#newsletter">Contact</a></li>
+      <li><a href="/work-with-me">Work With Me</a></li>
     </ul>
-    <button class="nav-cta" onclick="document.getElementById('free-guides').scrollIntoView({behavior:'smooth'})">Get Free Guides</button>
+    <a href="/start-here" class="nav-cta">Start Here &rarr;</a>
   </nav>
   <section class="hero" id="top">
     <div class="hero-bg-letter">N</div>
@@ -504,8 +674,8 @@
         <p class="hero-body">Most women over 40 have spent years trying harder, eating less, and chasing the latest wellness trends. Yet they still struggle with declining energy, a slower metabolism, loss of muscle, and body changes that feel increasingly difficult to reverse.</p>
         <p class="hero-promise">Build a Stronger Body. A Healthier Metabolism. Age with Strength and Confidence.</p>
         <div class="hero-ctas">
-          <button class="btn-hero-outline" onclick="document.getElementById('lab').scrollIntoView({behavior:'smooth'})">Browse Resources</button>
-          <button class="btn-hero-outline" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join the Waitlist</button>
+          <button class="btn-hero-outline" onclick="document.getElementById('lab').scrollIntoView({behavior:'smooth'})">Explore the System</button>
+          <button class="btn-hero-outline" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Join the Waitlist</button>
         </div>
       </div>
       <div class="hero-right">
@@ -520,7 +690,7 @@
           <form onsubmit="handleHMC(event)">
             <input class="hmc-input" type="text" name="name" placeholder="First name" required />
             <input class="hmc-input" type="email" name="email" placeholder="Email address" required />
-            <button type="submit" class="hmc-btn" id="hmc-btn">Send Me the Guide</button>
+            <button type="submit" class="hmc-btn" id="hmc-btn">Send Me the Free Guide</button>
           </form>
           <div class="hmc-toast" id="hmc-toast">Your guide is on its way. Check your inbox.</div>
           <p class="hmc-disc">No spam. Just the science and the next step.</p>
@@ -528,6 +698,14 @@
       </div>
     </div>
   </section>
+  <section class="anchor-band">
+    <div class="anchor-inner reveal">
+      <span class="anchor-label">The part nobody explains</span>
+      <h2 class="anchor-hl"><strong>Eating less was never the answer after 40.</strong> <em style="font-weight:300;">It never was.</em></h2>
+      <p class="anchor-body">The answer is eating more of the right thing, building the muscle that protects your metabolism, and creating a system that does not depend on motivation to run.</p>
+    </div>
+  </section>
+ 
   <section class="pillars">
     <div style="max-width:var(--max-w);margin:0 auto;">
       <div class="pillars-header reveal">
@@ -716,20 +894,20 @@
             <div class="prod-step">Guide 01</div>
             <div class="prod-title">The Protein-First Protocol</div>
             <p class="prod-body">The mechanism, the targets, and the system. Start here.</p>
-            <div class="prod-waitlist" style="border-color:var(--plum);color:var(--plum);margin-top:16px;" onclick="document.getElementById('free-guides').scrollIntoView({behavior:'smooth'})">Download Now</div>
+            <a href="/protein-first-protocol" class="prod-waitlist" style="border-color:var(--strawberry);color:var(--strawberry);margin-top:16px;display:inline-block;">Download Now</a>
           </div>
           <div class="prod-col pc-black reveal reveal-delay-2">
             <div class="prod-step">Guide 02</div>
             <div class="prod-title">The Ultimate Protein-First Grocery Guide</div>
             <p class="prod-body">Every protein source ranked. Built for real life.</p>
-            <div class="prod-waitlist" style="margin-top:16px;" onclick="document.getElementById('free-guides').scrollIntoView({behavior:'smooth'})">Download Now</div>
+            <a href="/protein-first-grocery-list" class="prod-waitlist" style="margin-top:16px;display:inline-block;">Download Now</a>
           </div>
           <div class="prod-col pc-white reveal reveal-delay-3">
             <div class="prod-step">Ebook 01</div>
             <div class="prod-title">The Protein-First Reset</div>
             <p class="prod-body">7-day recalibration for women who have stalled.</p>
             <div class="prod-price" style="margin-bottom:12px;">$7</div>
-            <div class="prod-waitlist" style="border-color:var(--ink);color:var(--ink);">Get the Reset</div>
+            <a href="/protein-first-reset" class="prod-waitlist" style="border-color:var(--ink);color:var(--ink);display:inline-block;">Get the Reset</a>
           </div>
           <div class="prod-col pc-spir reveal reveal-delay-4">
             <div class="prod-step">Ebook 02</div>
@@ -744,73 +922,6 @@
             <p class="prod-body">Nutrition, strength, sleep, hormones. The complete system.</p>
             <div class="prod-price" style="font-size:15px;opacity:0.6;margin-bottom:12px;">The Complete Protocol</div>
             <div class="prod-waitlist">Join the Waitlist</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="free-guides" id="free-guides">
-    <div class="fg-inner">
-      <div class="reveal">
-        <div class="section-label">Start Here</div>
-        <h2 class="section-title">Your first step<br /><em>starts here.</em></h2>
-        <p class="fg-eyebrow">To help you get started, here are <strong>two resources</strong> to keep and kickstart your strength era. No credit card. No guesswork. Just the science and the system, delivered to your inbox.</p>
-      </div>
-      <div class="fg-grid">
-        <div class="guide-card reveal">
-          <div class="img-placeholder gc-img-placeholder">
-            <div class="img-ph-icon">📖</div>
-            <div class="img-ph-label">Guide 01 Image</div>
-            <div class="img-ph-note">Protein meal, morning light, minimal styling. Size: 560 x 180px</div>
-          </div>
-          <div class="gc-cover gc-cover-1">
-            <div class="gc-cover-top"></div>
-            <div class="gc-cover-tag">Guide 01 · The Nams Lifestyle</div>
-            <div class="gc-cover-title">The Protein-<br /><em>First</em> Protocol</div>
-          </div>
-          <div class="gc-body">
-            <p class="gc-desc">The mechanism behind why protein is the missing variable at 40 and the exact system to fix it, starting this week.</p>
-            <ul class="gc-list">
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>Protein targets for post-40 anabolic resistance</span></li>
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>What 30g looks like at every meal with real food examples</span></li>
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>The 3-day audit to find your exact protein deficit</span></li>
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>Meal timing around circadian cortisol patterns</span></li>
-            </ul>
-            <form class="gc-form" onsubmit="handleGuideForm(event,'toast-g1','btn-g1')">
-              <input type="text" name="name" placeholder="First name" required />
-              <input type="email" name="email" placeholder="Email address" required />
-              <button type="submit" class="gc-submit" id="btn-g1" style="margin-top:12px;">Get the Protocol</button>
-              <div class="gc-form-disc">Delivered to your inbox instantly.</div>
-            </form>
-            <div class="gc-toast" id="toast-g1">Your guide is on its way. Check your inbox.</div>
-          </div>
-        </div>
-        <div class="guide-card reveal reveal-delay-2">
-          <div class="img-placeholder gc-img-placeholder">
-            <div class="img-ph-icon">🛒</div>
-            <div class="img-ph-label">Guide 02 Image</div>
-            <div class="img-ph-note">Fresh ingredients, bright natural light. Size: 560 x 180px</div>
-          </div>
-          <div class="gc-cover gc-cover-2">
-            <div class="gc-cover-top"></div>
-            <div class="gc-cover-tag">Guide 02 · The Nams Lifestyle</div>
-            <div class="gc-cover-title">The Ultimate<br /><em>Protein-First</em> Grocery Guide</div>
-          </div>
-          <div class="gc-body">
-            <p class="gc-desc">Every protein source ranked by density, hormone compatibility, and real-life accessibility. Built for the 40+ body.</p>
-            <ul class="gc-list">
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>Top protein sources ranked by category</span></li>
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>Hormone-compatible foods for 40+ biology</span></li>
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>Quick-grab snack proteins hitting 10 to 15g easily</span></li>
-              <li><div class="gc-check"><svg viewBox="0 0 10 10" fill="none" stroke="var(--plum)" stroke-width="2"><polyline points="1,5 4,8 9,2"/></svg></div><span>The low-protein traps in your current weekly shop</span></li>
-            </ul>
-            <form class="gc-form" onsubmit="handleGuideForm(event,'toast-g2','btn-g2')">
-              <input type="text" name="name" placeholder="First name" required />
-              <input type="email" name="email" placeholder="Email address" required />
-              <button type="submit" class="gc-submit" id="btn-g2" style="background:var(--spirulina);margin-top:12px;">Get the Guide</button>
-              <div class="gc-form-disc">Delivered to your inbox instantly.</div>
-            </form>
-            <div class="gc-toast" id="toast-g2">Your guide is on its way. Check your inbox.</div>
           </div>
         </div>
       </div>
@@ -878,9 +989,11 @@
         <div class="ft-wordmark">The Nams Lifestyle</div>
         <p class="ft-desc">Premium wellness for women 40+. Protein-first nutrition, longevity science, and discipline systems built for your biology.</p>
         <ul class="ft-nav">
-          <li><a href="#free-guides">Free Guides</a></li>
-          <li><a href="#lab">Resources</a></li>
-          <li><a href="https://instagram.com/thenamslifestyle" target="_blank">Instagram</a></li>
+          <li><a href="#lab">Free Guides</a></li>
+          <li><a href="#lab">Longevity Lab</a></li>
+          <li><a href="/start-here">Start Here</a></li>
+          <li><a href="/work-with-me">Work With Me</a></li>
+          <li><a href="https://www.instagram.com/thenamslifestyle" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="#newsletter">Newsletter</a></li>
           <li><a href="/privacy">Privacy</a></li>
           <li><a href="/terms">Terms</a></li>
@@ -931,3 +1044,5 @@
   </script>
 </body>
 </html>
+ 
+
