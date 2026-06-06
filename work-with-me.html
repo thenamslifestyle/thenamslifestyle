@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work With Me — The Nams Lifestyle</title>
+  <meta name="description" content="Share where you are and what you need — and receive a calibrated approach built for your biology." />
+  <meta name="theme-color" content="#1a1a1f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vanilla: #f7f1e3; --vanilla-d: #ede4ce;
+      --plum: #4f0c28; --plum-mid: #6b1035; --plum-light: #f9eef2;
+      --strawberry: #f9cdd5; --straw-mid: #f0a8b4;
+      --spirulina: #183b23; --guacamole: #4a6741;
+      --ink: #1a1a1f; --ink-soft: #3d3d44; --ink-muted: #7a7a85;
+      --espresso: #3B2314; --white: #ffffff;
+      --font-disp: 'Noto Serif Display', Georgia, serif;
+      --font-sub: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Montserrat', sans-serif;
+      --font-script: 'Pinyon Script', cursive;
+      --max-w: 1100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--ink); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(26,26,31,0.97); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 0 48px; height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-wordmark { font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--white); }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--espresso); color: var(--strawberry);
+      padding: 12px 26px; font-family: var(--font-body);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+      display: inline-block; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #2a1a0f; }
+
+    /* ── RECOGNITION STRIP ── */
+    .recognition {
+      padding: 120px 48px 80px;
+      background: var(--ink);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .recognition-inner { max-width: var(--max-w); margin: 0 auto; }
+    .section-eyebrow {
+      font-size: 10px; font-weight: 600; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--strawberry);
+      margin-bottom: 20px; display: block;
+    }
+    .recognition-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(36px, 4.5vw, 64px); font-weight: 900;
+      letter-spacing: -0.025em; line-height: 1.02;
+      color: var(--white); margin-bottom: 56px;
+    }
+    .recognition-hl em { font-style: italic; font-weight: 300; color: var(--strawberry); }
+    .recognition-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: rgba(255,255,255,0.06);
+    }
+    .rec-box {
+      background: var(--ink); border: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 32px; transition: border-color 0.3s;
+    }
+    .rec-box:hover { border-color: rgba(249,205,213,0.35); }
+    .rec-num {
+      font-family: var(--font-disp); font-size: 36px; font-weight: 900;
+      letter-spacing: -0.02em; color: var(--strawberry); opacity: 0.7;
+      display: block; margin-bottom: 16px; line-height: 1;
+    }
+    .rec-p {
+      font-family: var(--font-body); font-style: normal;
+      font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.75;
+    }
+
+    /* ── HERO + FORM ── */
+    .wwm-hero {
+      padding: 80px 48px 100px;
+      max-width: var(--max-w); margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+
+    /* FIX 01 — headline reframe */
+    .hero-hl {
+      font-family: var(--font-disp);
+      font-size: clamp(38px, 4.5vw, 66px); font-weight: 900;
+      letter-spacing: -0.025em; line-height: 1.03; color: var(--white);
+      margin-bottom: 24px;
+    }
+    .hero-hl em { font-style: italic; font-weight: 300; color: var(--strawberry); }
+
+    /* FIX 02 — trimmed hero body: removed "Keep it simple and honest" */
+    .hero-body {
+      font-family: var(--font-sub); font-style: italic;
+      font-size: 20px; color: rgba(255,255,255,0.5);
+      line-height: 1.8; margin-bottom: 32px;
+    }
+
+    /* FIX 03 — disclaimer expanded with output description */
+    .disclaimer {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-left: 3px solid var(--strawberry);
+      padding: 20px 24px;
+    }
+    .disclaimer-text {
+      font-size: 13px; color: rgba(255,255,255,0.45);
+      line-height: 1.75; font-weight: 300;
+    }
+    .disclaimer-text strong { color: rgba(255,255,255,0.7); font-weight: 500; }
+
+    /* FORM */
+    .wwm-form-wrap {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 44px 40px;
+    }
+    .form-title {
+      font-family: var(--font-disp); font-size: 22px; font-weight: 700;
+      color: var(--white); margin-bottom: 8px;
+    }
+    /* FIX 04 — form sub-copy revised */
+    .form-sub {
+      font-family: var(--font-sub); font-style: italic;
+      font-size: 18px; color: rgba(255,255,255,0.35);
+      margin-bottom: 36px; line-height: 1.6;
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-label {
+      font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4); margin-bottom: 8px; display: block;
+    }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1); color: var(--white);
+      padding: 14px 16px; font-family: var(--font-body);
+      font-size: 14px; font-weight: 300; outline: none;
+      transition: border-color 0.2s; display: block;
+      -webkit-appearance: none; appearance: none;
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: rgba(255,255,255,0.2); }
+    .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--strawberry); }
+    .form-textarea { resize: vertical; min-height: 100px; }
+    .form-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,0.3)' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
+    .form-select option { background: #1a1a1f; color: var(--white); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-submit {
+      width: 100%; background: var(--plum); color: var(--vanilla);
+      border: none; padding: 17px; font-family: var(--font-body);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.2s; margin-top: 8px;
+    }
+    .form-submit:hover { background: var(--plum-mid); }
+
+    /* FIX 05 — success message updated with brand signature close */
+    .form-success {
+      display: none; background: var(--spirulina); color: var(--white);
+      padding: 16px; font-size: 13px; text-align: center; margin-top: 12px; line-height: 1.6;
+    }
+    .form-success.show { display: block; }
+
+    /* FOOTER */
+    footer { background: var(--ink); padding: 60px 48px 36px; margin-top: 0; border-top: 1px solid rgba(255,255,255,0.06); }
+    .ft-inner { max-width: var(--max-w); margin: 0 auto; }
+    .ft-top { padding-bottom: 36px; margin-bottom: 28px; border-bottom: 1px solid rgba(247,241,227,0.08); }
+    .ft-wordmark { font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--white); margin-bottom: 12px; }
+    .ft-desc { font-size: 16px; font-weight: 400; color: var(--vanilla); line-height: 1.85; max-width: 500px; }
+    .ft-nav { display: flex; gap: 36px; flex-wrap: wrap; list-style: none; margin-top: 32px; }
+    .ft-nav a { font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: var(--white); transition: opacity 0.2s; }
+    .ft-nav a:hover { opacity: 0.7; }
+    .ft-bottom { display: flex; justify-content: space-between; align-items: center; }
+    .ft-copy { font-size: 13px; color: var(--white); letter-spacing: 0.06em; }
+    .ft-prot { font-family: var(--font-sub); font-style: italic; font-size: 18px; color: var(--vanilla); font-weight: 300; }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .recognition { padding: 110px 24px 60px; }
+      .recognition-grid { grid-template-columns: 1fr; }
+      .wwm-hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 80px; }
+      .wwm-form-wrap { padding: 32px 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      footer { padding-left: 24px; padding-right: 24px; }
+      .ft-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-wordmark" style="text-decoration:none;color:inherit;">The Nams Lifestyle</a>
+  <ul class="nav-links">
+    <li><a href="/start-here">Free Guides</a></li>
+    <li><a href="/#lab">Longevity Lab</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#newsletter">Contact</a></li>
+    <li><a href="/work-with-me">Work With Me</a></li>
+  </ul>
+  <!-- FIX: nav CTA changed to Free Guide on this page — avoids circular loop -->
+  <a href="/start-here" class="nav-cta">Free Guide &rarr;</a>
+</nav>
+
+<!-- ── RECOGNITION STRIP (FIX 06 — authority layer before the form) ── -->
+<section class="recognition">
+  <div class="recognition-inner">
+    <span class="section-eyebrow">This is for you if</span>
+    <h1 class="recognition-hl">You have already done<br /><em>the self-directed work.</em></h1>
+    <div class="recognition-grid">
+      <div class="rec-box">
+        <span class="rec-num">01</span>
+        <p class="rec-p">You understand the basics. You want a system calibrated specifically to your biology, not a generic framework.</p>
+      </div>
+      <div class="rec-box">
+        <span class="rec-num">02</span>
+        <p class="rec-p">You have been consistent and it is still not working. You want to understand exactly why, and what to change.</p>
+      </div>
+      <div class="rec-box">
+        <span class="rec-num">03</span>
+        <p class="rec-p">You are ready to stop diagnosing alone and work with someone who will tell you precisely what your body needs now.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HERO + FORM ── -->
+<div style="background:var(--ink);">
+  <div class="wwm-hero">
+
+    <!-- Left -->
+    <div>
+      <span class="section-eyebrow">Work With Me</span>
+      <!-- FIX 01 — headline reframed: from passive ask to authority statement -->
+      <h2 class="hero-hl">Your situation is specific.<br /><em>So is the solution.</em></h2>
+      <!-- FIX 02 — "Keep it simple and honest" removed; cleaner single sentence -->
+      <p class="hero-body">I only need enough to understand your situation and where your system is breaking down. That determines exactly where we start.</p>
+      <!-- FIX 03 — disclaimer now includes output description -->
+      <div class="disclaimer">
+        <p class="disclaimer-text"><strong>No payment is taken here.</strong> Once I review your submission I will come back to you within 48 to 72 hours with a clear recommendation — what I would focus on first, and whether working together directly makes sense for where you are.</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="wwm-form-wrap">
+      <div class="form-title">Share something about you</div>
+      <!-- FIX 04 — sub-copy revised: "help you properly" removed -->
+      <div class="form-sub">A few questions to understand your situation and where your system is breaking down. That is all I need.</div>
+
+      <form onsubmit="handleWWM(event)">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input class="form-input" type="text" name="firstName" placeholder="Your first name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input class="form-input" type="email" name="email" placeholder="Your email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Age Range</label>
+          <select class="form-select" name="age" required>
+            <option value="" disabled selected>Select your age range</option>
+            <option>35 to 39</option>
+            <option>40 to 44</option>
+            <option>45 to 49</option>
+            <option>50 to 54</option>
+            <option>55 and above</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">What is your biggest struggle right now?</label>
+          <select class="form-select" name="struggle" required>
+            <option value="" disabled selected>Choose the closest one</option>
+            <option>I am not losing weight despite eating well</option>
+            <option>I am losing muscle and do not know how to stop it</option>
+            <option>My energy is low and I do not understand why</option>
+            <option>My digestion and gut health have changed</option>
+            <option>I am struggling with hormonal shifts and how to eat around them</option>
+            <option>I know I need more protein but do not know how to get there</option>
+            <option>I have no consistent system and keep starting over</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Nutrition — Current approach</label>
+          <select class="form-select" name="nutrition">
+            <option value="" disabled selected>How would you describe your current eating?</option>
+            <option>I eat fairly well but have no real system</option>
+            <option>I am mostly protein-focused already</option>
+            <option>I restrict calories and it is not working</option>
+            <option>I eat plant-based or mostly plant-based</option>
+            <option>I skip meals or eat irregularly</option>
+            <option>I am not sure where to start</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Any dietary restrictions or allergies?</label>
+          <select class="form-select" name="allergies">
+            <option value="" disabled selected>Select if applicable</option>
+            <option>None</option>
+            <option>Gluten intolerance or coeliac</option>
+            <option>Dairy free</option>
+            <option>Nut allergy</option>
+            <option>Vegetarian</option>
+            <option>Vegan</option>
+            <option>Multiple restrictions</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Fitness — Current activity level</label>
+          <select class="form-select" name="fitness">
+            <option value="" disabled selected>How active are you currently?</option>
+            <option>I train 4 or more times per week</option>
+            <option>I train 2 to 3 times per week</option>
+            <option>I walk and do light movement only</option>
+            <option>I am mostly sedentary right now</option>
+            <option>I want to start but do not know where to begin</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">What do you most want help with?</label>
+          <select class="form-select" name="helpWith" required>
+            <option value="" disabled selected>Choose the primary focus</option>
+            <option>Nutrition planning and protein targets</option>
+            <option>Building a consistent strength training habit</option>
+            <option>Understanding my hormones and how to eat around them</option>
+            <option>Gut health and digestion</option>
+            <option>All of the above — I need a complete system</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Approximate budget if it is a right fit (USD)</label>
+          <select class="form-select" name="budget" required>
+            <option value="" disabled selected>Select a range</option>
+            <option>Under $200</option>
+            <option>$200 to $500</option>
+            <option>$500 to $1,000</option>
+            <option>$1,000 to $2,000</option>
+            <option>Above $2,000</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Anything else you want me to know? (optional)</label>
+          <textarea class="form-textarea" name="notes" placeholder="Share anything that helps me understand your situation better..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send My Details</button>
+        <!-- FIX 05 — success message closes with brand signature line -->
+        <div class="form-success" id="wwm-success">
+          Your details have been received. I will review everything and respond personally within 48 to 72 hours with a clear recommendation for where to start.<br><br>
+          Nams. The Protein-First Protocol.
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-wordmark">The Nams Lifestyle</div>
+      <p class="ft-desc">Premium wellness for women 40+. Protein-first nutrition, longevity science, and discipline systems built for your biology.</p>
+      <ul class="ft-nav">
+        <li><a href="/#lab">Free Guides</a></li>
+        <li><a href="/#lab">Longevity Lab</a></li>
+        <li><a href="/start-here">Start Here</a></li>
+        <li><a href="/work-with-me">Work With Me</a></li>
+        <li><a href="https://www.instagram.com/thenamslifestyle" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="/#newsletter">Newsletter</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms">Terms</a></li>
+      </ul>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">2026 The Nams Lifestyle. All rights reserved.</span>
+      <span class="ft-prot">Protein first. Everything else follows.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function handleWWM(e) {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target));
+    console.log('Work With Me submission:', data);
+    // TODO: POST to email handler or Kit
+    document.getElementById('wwm-success').classList.add('show');
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Sent'; btn.style.background = 'var(--spirulina)'; btn.disabled = true;
+  }
+</script>
+
+</body>
+</html>
